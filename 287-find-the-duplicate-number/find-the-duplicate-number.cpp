@@ -12,26 +12,41 @@ public:
         // return 0;
         //                                        TC = O(n logn)
         //                                        SC = O(n)
-
+//  -----------------------------------------------------------------------------
         //                                       negative flag 
-        for (int i = 0; i < nums.size(); i++) {
+        // for (int i = 0; i < nums.size(); i++) {
 
-            int index = abs(nums[i]);
+        //     int index = abs(nums[i]);
 
-            if (nums[index] < 0) {
-                return index;
-            }
+        //     if (nums[index] < 0) {
+        //         return index;
+        //     }
 
-            nums[index] *= -1;
+        //     nums[index] *= -1;
+        // }
+        // return -1;
+        //                                          TC = O(n)
+        //                                          SC = O(1)
+//  -----------------------------------------------------------------------------
+        //                                        map
+        map<int, int> mapp;
+        for(int i = 0; i < nums.size(); i++)
+        {
+            mapp[nums[i]]++;
         }
-
-        return -1;
-
+        for(auto it : mapp)
+        {
+            if(it.second == 1)
+                continue; 
+            return it.first; 
+        }
+        return 0; 
+        //                                            TC = O((n * logm) + m)  =>   m is ((n / 2) + 1)
+        //                                            SC = O(m)
+//  -----------------------------------------------------------------------------
         //                                        bit manipulation 
         
-
-
-
+//  -----------------------------------------------------------------------------
 
     }
 };
