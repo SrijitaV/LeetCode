@@ -10,7 +10,7 @@ public:
         vector<int> count(maxi - mini + 1, 0);
         for (int i = 0; i < nums.size(); i++)
             count[nums[i] - mini]++;
-                   // Time = O(k), Space = O(k)    here k is the range of values 
+                   
 
         // putting elemts into original array in sorted order 
         int ptr = 0; 
