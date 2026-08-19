@@ -67,3 +67,15 @@ This is a personal learning repository, but suggestions and improvements are alw
 ---
 
 **Happy Coding 💻**
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0118-pascals-triangle](https://github.com/SrijitaV/LeetCode/tree/main/0118-pascals-triangle/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0118-pascals-triangle](https://github.com/SrijitaV/LeetCode/tree/main/0118-pascals-triangle/) | Easy |
+<!---LeetCode Topics End-->
