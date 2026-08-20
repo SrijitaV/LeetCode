@@ -73,9 +73,14 @@ This is a personal learning repository, but suggestions and improvements are alw
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0118-pascals-triangle](https://github.com/SrijitaV/LeetCode/tree/main/0118-pascals-triangle/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0118-pascals-triangle](https://github.com/SrijitaV/LeetCode/tree/main/0118-pascals-triangle/) | Easy |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 <!---LeetCode Topics End-->
