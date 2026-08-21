@@ -75,6 +75,7 @@ This is a personal learning repository, but suggestions and improvements are alw
 | ------- | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0118-pascals-triangle](https://github.com/SrijitaV/LeetCode/tree/main/0118-pascals-triangle/) | Easy |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/SrijitaV/LeetCode/tree/main/3069-distribute-elements-into-two-arrays-i/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -83,4 +84,8 @@ This is a personal learning repository, but suggestions and improvements are alw
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/SrijitaV/LeetCode/tree/main/3069-distribute-elements-into-two-arrays-i/) | Easy |
 <!---LeetCode Topics End-->
