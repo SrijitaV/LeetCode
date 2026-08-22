@@ -88,4 +88,8 @@ This is a personal learning repository, but suggestions and improvements are alw
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/SrijitaV/LeetCode/tree/main/3069-distribute-elements-into-two-arrays-i/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3622-check-divisibility-by-digit-sum-and-product](https://github.com/SrijitaV/LeetCode/tree/main/3622-check-divisibility-by-digit-sum-and-product/) | Easy |
 <!---LeetCode Topics End-->
