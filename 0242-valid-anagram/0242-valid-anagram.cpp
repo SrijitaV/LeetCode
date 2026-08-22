@@ -16,11 +16,11 @@ public:
 
         // make frequency table for one increase then decrease and then check for zero
         int freq[256] = {0};
-        for (int i = 0; i < s.size(); i++)
+        for (int i = 0; i < s.size(); i++)   // O(n)
             freq[s[i]]++;
-        for (int i = 0; i < t.size(); i++)
+        for (int i = 0; i < t.size(); i++)   // O(m)
             freq[t[i]]--; 
-        for (int i = 0; i < 256; i++)
+        for (int i = 0; i < 256; i++)        // O(256)
         {
             if (freq[i] != 0)
                 return false; 
