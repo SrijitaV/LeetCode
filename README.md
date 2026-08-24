@@ -93,6 +93,7 @@ This is a personal learning repository, but suggestions and improvements are alw
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2485-find-the-pivot-integer](https://github.com/SrijitaV/LeetCode/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/SrijitaV/LeetCode/tree/main/3622-check-divisibility-by-digit-sum-and-product/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -106,4 +107,8 @@ This is a personal learning repository, but suggestions and improvements are alw
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0242-valid-anagram](https://github.com/SrijitaV/LeetCode/tree/main/0242-valid-anagram/) | Easy |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2485-find-the-pivot-integer](https://github.com/SrijitaV/LeetCode/tree/main/2485-find-the-pivot-integer/) | Easy |
 <!---LeetCode Topics End-->
