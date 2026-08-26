@@ -89,6 +89,7 @@ This is a personal learning repository, but suggestions and improvements are alw
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1910-remove-all-occurrences-of-a-substring](https://github.com/SrijitaV/LeetCode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/SrijitaV/LeetCode/tree/main/3069-distribute-elements-into-two-arrays-i/) | Easy |
 | [4020-elevator-requests-i](https://github.com/SrijitaV/LeetCode/tree/main/4020-elevator-requests-i/) | Easy |
 ## Math
@@ -105,6 +106,7 @@ This is a personal learning repository, but suggestions and improvements are alw
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0242-valid-anagram](https://github.com/SrijitaV/LeetCode/tree/main/0242-valid-anagram/) | Easy |
+| [1910-remove-all-occurrences-of-a-substring](https://github.com/SrijitaV/LeetCode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -113,4 +115,8 @@ This is a personal learning repository, but suggestions and improvements are alw
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2485-find-the-pivot-integer](https://github.com/SrijitaV/LeetCode/tree/main/2485-find-the-pivot-integer/) | Easy |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1910-remove-all-occurrences-of-a-substring](https://github.com/SrijitaV/LeetCode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 <!---LeetCode Topics End-->
