@@ -106,6 +106,7 @@ This is a personal learning repository, but suggestions and improvements are alw
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0242-valid-anagram](https://github.com/SrijitaV/LeetCode/tree/main/0242-valid-anagram/) | Easy |
+| [1047-remove-all-adjacent-duplicates-in-string](https://github.com/SrijitaV/LeetCode/tree/main/1047-remove-all-adjacent-duplicates-in-string/) | Easy |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/SrijitaV/LeetCode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
@@ -118,5 +119,6 @@ This is a personal learning repository, but suggestions and improvements are alw
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1047-remove-all-adjacent-duplicates-in-string](https://github.com/SrijitaV/LeetCode/tree/main/1047-remove-all-adjacent-duplicates-in-string/) | Easy |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/SrijitaV/LeetCode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 <!---LeetCode Topics End-->
