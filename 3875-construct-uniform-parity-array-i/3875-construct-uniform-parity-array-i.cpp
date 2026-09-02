@@ -1,13 +1,13 @@
 class Solution {
 public:
     bool uniformArray(vector<int>& nums1) {
-        // ====
-        return true; // iska logic ye hai ki : pehla ~ dimag kam lagao, dusra ~
+        // ======== most optimized idea =======
+        // return true; // iska logic ye hai ki : pehla ~ dimag kam lagao, dusra ~
                      // jab given array ko anyways odd bana hi rahai toh har
                      // case mein true hi return hoga
 
 
-        // ===
+        // ======= ideal idea for real solution =======
 
         // If all elements are even, keep every element as it is : nums2[i] = nums1[i].
         // Otherwise, there is at least one odd number. Pick that odd number as
