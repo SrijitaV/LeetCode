@@ -402,6 +402,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
+| [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -427,4 +428,8 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0058-length-of-last-word](https://github.com/SrijitaV/LeetCode/tree/main/0058-length-of-last-word/) | Easy |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 <!---LeetCode Topics End-->
