@@ -20,5 +20,21 @@ public:
             }
         }
         return false;
+        /*
+        For each possible a, calculate:       b² = c - a²
+
+        Then check whether b² is a perfect square by taking its square root.
+
+        a * a <= c ensures we only check valid values of a.
+        root = sqrt(b) gives the possible value of b.
+        If root * root == b, then a² + b² = c, so return true.
+        If no valid pair is found, return false.
+        Time Complexity
+
+        The loop runs up to √c times, and sqrt() takes constant time.
+
+        Time: O(√c)
+        Space: O(1)
+        */
     }
 };
