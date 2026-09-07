@@ -19,4 +19,11 @@ public:
         // If the result is 1 after all divisions, it's an ugly number.
         return n == 1;
     }
+    // This approach reduces the number to its core factors and ensures no primes other than 2, 3, or 5 exist.
+
+    // Complexity
+    // Time Complexity:
+    //     ( O(\log n) ) — the number is divided by 2, 3, or 5 repeatedly.
+    // Space Complexity:
+    //     ( O(1) ) — constant space usage.
 };
