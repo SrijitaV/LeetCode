@@ -39,6 +39,9 @@ public:
 
         return {start, end};
 
+        // Time Complexity - O(log n) 
+        // Space Complexity - O(1)
+
         // ------------------- Linear Search -------------------
         // int start = -1, end = -1;
         // for (int i = 0; i < nums.size(); i++)
@@ -57,7 +60,9 @@ public:
         //     }
         // }
         // return {start, end};
+        
         // Time Complexity:  O(n)
         // Space Complexity: O(1)
+
     }
 };
