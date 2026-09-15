@@ -410,6 +410,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0223-rectangle-area](https://github.com/SrijitaV/LeetCode/tree/main/0223-rectangle-area/) | Medium |
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
@@ -474,5 +475,6 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Geometry
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0223-rectangle-area](https://github.com/SrijitaV/LeetCode/tree/main/0223-rectangle-area/) | Medium |
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 <!---LeetCode Topics End-->
