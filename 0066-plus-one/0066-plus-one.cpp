@@ -27,7 +27,9 @@ public:
                 digits.insert(digits.begin(), 1);
             }
         }
-
         return digits;
     }
+
+    //     Time: O(n)
+    // Auxiliary Space: O(1)
 };
