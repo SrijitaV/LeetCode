@@ -10,6 +10,7 @@ public:
             ans = ans ^ nums[i];
         }
         return ans;
+        // Time complexity: O(n), Space complexity: O(1)
 
         // -------------- brute force apporach ----------------
 
@@ -22,5 +23,6 @@ public:
         //     }
         // }
         // return nums.size();
+        // Time	O(n log n), Auxiliary Space	O(1)
     }
 };
