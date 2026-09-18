@@ -405,6 +405,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0066-plus-one](https://github.com/SrijitaV/LeetCode/tree/main/0066-plus-one/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
+| [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
@@ -479,6 +480,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/SrijitaV/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
+| [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 ## Geometry
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -488,4 +490,12 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
+## Counting Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
+## Bubble Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 <!---LeetCode Topics End-->
