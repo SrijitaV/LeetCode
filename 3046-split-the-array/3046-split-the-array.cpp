@@ -5,19 +5,19 @@ public:
         // ---------- simple idea approach ---------------
         // If any number occurs more than 2 times, answer is immediately false
 
-        sort(nums.begin(), nums.end());
+        // sort(nums.begin(), nums.end());
 
-        for (int i = 0; i < nums.size(); i++) {
+        // for (int i = 0; i < nums.size(); i++) {
 
-            // If the same element occurs 3 times
-            if (i + 2 < nums.size() &&
-                nums[i] == nums[i + 1] &&
-                nums[i] == nums[i + 2]) {
-                return false;
-            }
-        }
+        //     // If the same element occurs 3 times
+        //     if (i + 2 < nums.size() &&
+        //         nums[i] == nums[i + 1] &&
+        //         nums[i] == nums[i + 2]) {
+        //         return false;
+        //     }
+        // }
 
-        return true;
+        // return true;
 
 
         
@@ -79,6 +79,40 @@ public:
         // return true;
 
         // check karenge ki nums1 mrin ya num2 mein similar items toh nahi hai , agar poore dono mein distinct elements hue toh tru varna agar kuch ek bhi similar aagya don mein se kisi mein bhi toh false 
+
+
+
+        // ------------- another brute force approach ------------------
+         int n = nums.size() / 2;
+
+        vector<int> nums1;
+        vector<int> nums2;
+
+        sort(nums.begin(), nums.end());
+
+        int i = 0;
+
+        while (i < nums.size()) {
+
+            // Put first occurrence in nums1
+            if (nums1.empty() || nums1.back() != nums[i]) {
+                nums1.push_back(nums[i]);
+            }
+
+            // Put second occurrence in nums2
+            else if (nums2.empty() || nums2.back() != nums[i]) {
+                nums2.push_back(nums[i]);
+            }
+
+            // Third occurrence
+            else {
+                return false;
+            }
+
+            i++;
+        }
+
+        return true;
 
     }
 };
