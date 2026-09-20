@@ -3,11 +3,17 @@ public:
     int reverseDegree(string s) {
 
         // ========= optimized code ===========
+        
         int ans = 0;
+
         for (int i = 1; i <= s.size(); i++) {
             ans += (26 - (s[i - 1] - 'a')) * i;
         }
+
         return ans;
+
+        // Time complexity: O(n). We traverse the string once.
+        // Space complexity: O(1).
 
         // ===============================================================================================
 
