@@ -2,33 +2,44 @@ class Solution {
 public:
     int reverseDegree(string s) {
 
+        // ========= optimized code ===========
+        int ans = 0;
+        for (int i = 1; i <= s.size(); i++) {
+            ans += (26 - (s[i - 1] - 'a')) * i;
+        }
+        return ans;
+
+        // ===============================================================================================
+
+        // ============ my code =============
+
         // map kar rahe hai character aur uski value ko
 
-        unordered_map<char, int> mp; // map with char as key, int as value
+        // unordered_map<char, int> mp; // map with char as key, int as value
 
-        char ch = 'a'; // starting character
-        int n = 26;    // starting integer
+        // char ch = 'a'; // starting character
+        // int n = 26;    // starting integer
 
         // loop 26 times for all letters a–z
-        for (int i = 0; i < 26; i++) {
-            mp[ch] = n; // insert key-value pair
-            ch++;       // move to next character
-            n--;        // decrement integer
-        }
+        // for (int i = 0; i < 26; i++) {
+        //     mp[ch] = n; // insert key-value pair
+        //     ch++;       // move to next character
+        //     n--;        // decrement integer
+        // }
 
         // given string se result generate kar re hai
 
-        int result = 0;
+        // int result = 0;
 
-        for (int i = 0; i < s.length(); i++) {
+        // for (int i = 0; i < s.length(); i++) {
             // s[i] → current character in the string
             // mp[s[i]] → value mapped to that character (like a=26, b=25, etc.)
             // (i + 1) → 1-indexed position of the character in the string
             // multiply and add to result
-            result = result + (mp[s[i]] * (i + 1));
-        }
+        //     result = result + (mp[s[i]] * (i + 1));
+        // }
 
-        return result;
+        // return result;
 
         //     ⏱ Time Complexity
         // Map creation loop: Runs 26 times → 𝑂(26) = 𝑂(1) (constant time)
