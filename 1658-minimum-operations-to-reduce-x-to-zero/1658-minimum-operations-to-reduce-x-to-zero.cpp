@@ -33,9 +33,9 @@ public:
 
             // sum bada ho gaya toh left se elements remove karenge
             while (left <= right && sum > target) {
-        sum -= nums[left];
-        left++;
-    }
+                sum -= nums[left];
+                left++;
+            }
 
             // target mil gaya toh maximum length update karenge
             if (sum == target) {
@@ -52,7 +52,7 @@ public:
 
         // Time complexity: O(n)
         //  O(n) + O(n) = O(n)
-        // ek total sum ka aur ek sliding window ka 
+        // ek total sum ka aur ek sliding window ka
 
         // Space complexity: O(1)
 
