@@ -406,6 +406,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3033-modify-the-matrix](https://github.com/SrijitaV/LeetCode/tree/main/3033-modify-the-matrix/) | Easy |
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
@@ -452,6 +453,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/SrijitaV/LeetCode/tree/main/3904-smallest-stable-index-ii/) | Medium |
@@ -466,11 +468,13 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/SrijitaV/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Recursion
@@ -514,4 +518,8 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3033-modify-the-matrix](https://github.com/SrijitaV/LeetCode/tree/main/3033-modify-the-matrix/) | Easy |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 <!---LeetCode Topics End-->
