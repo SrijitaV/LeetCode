@@ -50,6 +50,12 @@ public:
         // jo elements subarray ke bahar hain unko remove karna hai
         return n - maxLen;
 
+        // Time complexity: O(n)
+        //  O(n) + O(n) = O(n)
+        // ek total sum ka aur ek sliding window ka 
+
+        // Space complexity: O(1)
+
         // ------------- brute force - trial ------------------
 
         // int ans = 0; // minimum number of operations required
@@ -79,27 +85,3 @@ public:
         // the better idea approach lagay apna
     }
 };
-
-// int left = 0;
-// int sum = 0;
-// int maxLen = -1;
-
-// for (int right = 0; right < n; right++) {
-
-//     sum += nums[right];
-
-//     while (left <= right && sum > target) {
-//         sum -= nums[left];
-//         left++;
-//     }
-
-//     if (sum == target) {
-//         maxLen = max(maxLen, right - left + 1);
-//     }
-// }
-
-// if (maxLen == -1) {
-//     return -1;
-// }
-
-// return n - maxLen;
