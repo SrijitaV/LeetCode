@@ -34,3 +34,15 @@ public:
         return -1;
     }
 };
+
+// Complexity
+
+// Let n = nums.size() and d = number of digits in a number.
+
+// Time Complexity: O(n × d)
+// We traverse all n elements.
+// For each element, fSum() takes O(d) to calculate the digit sum.
+// So overall: O(n × d)
+// Space Complexity: O(d)
+// to_string(n) creates a string containing the digits.
+// So the extra space is O(d).
