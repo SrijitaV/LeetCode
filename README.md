@@ -411,6 +411,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [3033-modify-the-matrix](https://github.com/SrijitaV/LeetCode/tree/main/3033-modify-the-matrix/) | Easy |
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/SrijitaV/LeetCode/tree/main/3904-smallest-stable-index-ii/) | Medium |
@@ -424,6 +425,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 | [3870-count-commas-in-range](https://github.com/SrijitaV/LeetCode/tree/main/3870-count-commas-in-range/) | Easy |
 | [3871-count-commas-in-range-ii](https://github.com/SrijitaV/LeetCode/tree/main/3871-count-commas-in-range-ii/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
