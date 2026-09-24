@@ -1,26 +1,36 @@
 class Solution {
-private: 
-    int fSum(int n)
-    {
-        int ans = 0; 
+private:
+    // Function to find the sum of digits of a number
+    int fSum(int n) {
+        int ans = 0;
+
+        // Convert number into string
         string s = to_string(n);
-        for (int i = 0; i < s.length(); i++)
-        {
+
+        // Traverse through each digit
+        for (int i = 0; i < s.length(); i++) {
+            // Convert character digit into integer and add
             ans = ans + (s[i] - '0');
         }
-        return ans; 
+
+        return ans;
     }
 
 public:
     int smallestIndex(vector<int>& nums) {
-        for (int i = 0; i < nums.size(); i++)
-        {
+
+        // Traverse through all elements of the array
+        for (int i = 0; i < nums.size(); i++) {
+            // Find sum of digits of current element
             int sum = fSum(nums[i]);
-            if (sum == i)
-            {
+
+            // If digit sum is equal to index, return index
+            if (sum == i) {
                 return i;
             }
         }
+
+        // If no such index is found
         return -1;
     }
 };
