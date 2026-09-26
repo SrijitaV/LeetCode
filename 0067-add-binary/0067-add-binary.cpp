@@ -2,6 +2,10 @@ class Solution {
 public:
     string addBinary(string a, string b) {
 
+        // ---------------- optimized appraoch ----------------
+
+        // -------------- my appraoch ~ brute force ---------------
+
         int carry = 0;
         string ans = "";
 
@@ -52,5 +56,8 @@ public:
         reverse(ans.begin(), ans.end());
 
         return ans;
+
+        // Time Complexity  : O(max(n, m))
+        // Space Complexity : O(max(n, m) )
     }
 };
