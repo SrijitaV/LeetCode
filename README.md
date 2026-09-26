@@ -420,6 +420,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0066-plus-one](https://github.com/SrijitaV/LeetCode/tree/main/0066-plus-one/) | Easy |
+| [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0223-rectangle-area](https://github.com/SrijitaV/LeetCode/tree/main/0223-rectangle-area/) | Medium |
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
@@ -451,6 +452,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/SrijitaV/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0058-length-of-last-word](https://github.com/SrijitaV/LeetCode/tree/main/0058-length-of-last-word/) | Easy |
+| [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Prefix Sum
@@ -506,6 +508,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 ## Counting Sort
 | Problem Name | Difficulty |
@@ -519,6 +522,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Matrix
