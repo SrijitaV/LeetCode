@@ -45,6 +45,9 @@ public:
         reverse(begin(ans), end(ans));
         return ans;
 
+        // Time complexity : O(max|a|,|b|)
+        // Space complexity : O(max|a|,|b|)
+
         // -------------- my appraoch ~ brute force ---------------
 
         // int carry = 0;
