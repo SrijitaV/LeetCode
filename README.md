@@ -425,6 +425,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0223-rectangle-area](https://github.com/SrijitaV/LeetCode/tree/main/0223-rectangle-area/) | Medium |
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
+| [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
@@ -436,6 +437,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
@@ -492,6 +494,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Enumeration
 | Problem Name | Difficulty |
@@ -545,4 +548,8 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
 <!---LeetCode Topics End-->
