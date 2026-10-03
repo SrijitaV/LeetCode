@@ -407,6 +407,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
+| [0643-maximum-average-subarray-i](https://github.com/SrijitaV/LeetCode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
@@ -545,6 +546,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
+| [0643-maximum-average-subarray-i](https://github.com/SrijitaV/LeetCode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
