@@ -45,5 +45,8 @@ public:
 
         // If we could not find 3 equal-sum parts
         return false;
+
+        // Time: O(n) because we traverse the array twice.
+        // Space: O(1) because we only use sum, curr, and ans.
     }
 };
