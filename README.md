@@ -462,6 +462,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0058-length-of-last-word](https://github.com/SrijitaV/LeetCode/tree/main/0058-length-of-last-word/) | Easy |
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
+| [0856-score-of-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Prefix Sum
@@ -553,11 +554,13 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0856-score-of-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0856-score-of-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 ## Memoization
 | Problem Name | Difficulty |
