@@ -16,5 +16,8 @@ public:
             }
         }
         return add + open;
+
+        // Time : O(n) ~ Traverse the string once
+        // Space :	O(1) ~ Only two variables used
     }
 };
