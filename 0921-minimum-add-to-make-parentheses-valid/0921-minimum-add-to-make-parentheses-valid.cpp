@@ -6,16 +6,16 @@ public:
 
         for (int i = 0; i < s.length(); i++) {
             if (s[i] == '(') {
-                open++;
-            } else { // s[i] == ')'
+                open++; // store unmatched '('
+            } else {    // s[i] == ')'
                 if (open > 0) {
-                    open--;
+                    open--; // match ')' with '('
                 } else {
-                    add++;
+                    add++; // need to add '('
                 }
             }
         }
-        return add + open;
+        return add + open; // add ')' for remaining '('
 
         // Time : O(n) ~ Traverse the string once
         // Space :	O(1) ~ Only two variables used
