@@ -463,6 +463,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0058-length-of-last-word](https://github.com/SrijitaV/LeetCode/tree/main/0058-length-of-last-word/) | Easy |
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
+| [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
 | [0856-score-of-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/SrijitaV/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
@@ -496,6 +497,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0049-group-anagrams](https://github.com/SrijitaV/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
+| [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
@@ -516,6 +518,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0049-group-anagrams](https://github.com/SrijitaV/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
+| [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 ## Geometry
@@ -528,6 +531,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
+| [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
 ## Counting Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
