@@ -1,6 +1,7 @@
 class Solution {
 public:
     char findTheDifference(string s, string t) {
+        // -------------- MY BRUTE FORCE APPROACH ----------------
         int total_s = 0, total_t = 0;
         for (int i = 0; i < s.length(); i++) {
             total_s = total_s + s[i];
@@ -10,5 +11,7 @@ public:
         }
         int ans = total_t - total_s;
         return ans; 
+        // Time: O(n)
+        // Space: O(1)
     }
 };
