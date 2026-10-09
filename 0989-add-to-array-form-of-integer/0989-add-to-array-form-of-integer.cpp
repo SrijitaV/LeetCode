@@ -21,8 +21,8 @@ public:
         reverse(result.begin(), result.end());
         return result;
 
-        // Time complexity: O(n+logK)
-        // Space complexity: O(n+logK)
+        // Time complexity: O(n + logK)
+        // Space complexity: O(n + logK)
 
         // -------------- my brute force approach --------------
         // int given_num = 0;
