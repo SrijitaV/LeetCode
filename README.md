@@ -410,6 +410,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/SrijitaV/LeetCode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
+| [0989-add-to-array-form-of-integer](https://github.com/SrijitaV/LeetCode/tree/main/0989-add-to-array-form-of-integer/) | Easy |
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/SrijitaV/LeetCode/tree/main/1013-partition-array-into-three-parts-with-equal-sum/) | Easy |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
@@ -433,6 +434,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
+| [0989-add-to-array-form-of-integer](https://github.com/SrijitaV/LeetCode/tree/main/0989-add-to-array-form-of-integer/) | Easy |
 | [2469-convert-the-temperature](https://github.com/SrijitaV/LeetCode/tree/main/2469-convert-the-temperature/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 | [3870-count-commas-in-range](https://github.com/SrijitaV/LeetCode/tree/main/3870-count-commas-in-range/) | Easy |
