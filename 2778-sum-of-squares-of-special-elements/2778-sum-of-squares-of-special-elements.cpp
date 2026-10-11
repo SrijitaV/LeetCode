@@ -9,7 +9,7 @@ public:
             }
         }
         return ans;
-        // Time: O(n)
-        // Space: O(1)
+        // Time: O(n) ~ We iterate through the array nums of length n once, performing O(1) operations per element.
+        // Space: O(1) ~ Only a constant number of variables are used.
     }
 };
