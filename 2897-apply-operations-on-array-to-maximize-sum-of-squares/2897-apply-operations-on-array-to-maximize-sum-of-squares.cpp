@@ -28,5 +28,8 @@ public:
         }
 
         return ans;
+
+        // Time: O(32n+32k) = O(n)
+        // Space: O(32) = O(1)
     }
 };
