@@ -416,6 +416,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [2778-sum-of-squares-of-special-elements](https://github.com/SrijitaV/LeetCode/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3033-modify-the-matrix](https://github.com/SrijitaV/LeetCode/tree/main/3033-modify-the-matrix/) | Easy |
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
@@ -506,6 +507,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0500-keyboard-row](https://github.com/SrijitaV/LeetCode/tree/main/0500-keyboard-row/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Recursion
@@ -539,6 +541,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 ## Counting Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -588,4 +591,5 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/SrijitaV/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/SrijitaV/LeetCode/tree/main/1013-partition-array-into-three-parts-with-equal-sum/) | Easy |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 <!---LeetCode Topics End-->
