@@ -422,6 +422,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/SrijitaV/LeetCode/tree/main/3904-smallest-stable-index-ii/) | Medium |
@@ -530,6 +531,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 ## Geometry
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -592,4 +594,5 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/SrijitaV/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/SrijitaV/LeetCode/tree/main/1013-partition-array-into-three-parts-with-equal-sum/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 <!---LeetCode Topics End-->
