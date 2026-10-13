@@ -25,26 +25,27 @@ public:
         // }
         // return ans;
 
-        sort(nums.begin(), nums.end(), [](int a, int b)
-        {
-            return abs(a) > abs(b);
-        });
+        sort(nums.begin(), nums.end(),
+             [](int a, int b) { return abs(a) > abs(b); });
         int n = nums.size();
-        long long ans = 0; 
+        long long ans = 0;
 
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             long long square = 1LL * nums[i] * nums[i];
 
-            if (i < (n + 1) / 2)
-            {
+            if (i < (n + 1) / 2) {
                 ans = ans + square;
-            }
-            else 
-            {
-                ans = ans - square; 
+            } else {
+                ans = ans - square;
             }
         }
-        return ans; 
+        return ans;
+
+        // Time Complexity: O(n log n) 
+        //     sort(nums.begin(), nums.end(), ...) takes - O(n log n)
+        //     the for loop iterates through all \(n\) elements taking - O(n)
+        //     the total is - O(n log n)
+        //     note: the sorting modifies nums in place, so you don't create another array.
+        // Space Complexity: O(log n) ~ auxiliary space on average for std::sort (implementation-dependent stack usage)
     }
 };
