@@ -16,5 +16,8 @@ public:
         }
 
         return ans;
+
+        // Time complexity: O(num)
+        // Space complexity: O(num) for the output string.
     }
 };
