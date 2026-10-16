@@ -435,6 +435,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0223-rectangle-area](https://github.com/SrijitaV/LeetCode/tree/main/0223-rectangle-area/) | Medium |
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
+| [0342-power-of-four](https://github.com/SrijitaV/LeetCode/tree/main/0342-power-of-four/) | Easy |
 | [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
@@ -517,6 +518,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0342-power-of-four](https://github.com/SrijitaV/LeetCode/tree/main/0342-power-of-four/) | Easy |
 | [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Enumeration
@@ -545,6 +547,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
+| [0342-power-of-four](https://github.com/SrijitaV/LeetCode/tree/main/0342-power-of-four/) | Easy |
 | [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 ## Counting Sort
