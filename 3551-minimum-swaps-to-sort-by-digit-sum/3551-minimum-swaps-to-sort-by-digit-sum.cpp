@@ -36,6 +36,9 @@ public:
         // se calculate karte hain ki kitne swaps lagenge.
         for (int i = 0; i < nums.size(); i++) {
             if (visited[i] || get<2>(arr[i]) == i) {
+                // Ismein 2 checks hain.
+                // Check 1: visited[i] ~ Agar index pehle process ho chuka hai, toh usko dobara process nahi karna.
+                // Check 2: get<2>(arr[i]) == i ~ get<2>(arr[i]) tuple ki third value, yaani original index, nikalta hai. Agar original index aur current sorted position same hain, toh element already apni correct position par hai. Uske liye swap nahi chahiye. continue ka matlab current iteration chhodkar next i par jaana.
                 continue;
             }
 
