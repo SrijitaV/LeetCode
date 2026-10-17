@@ -24,9 +24,13 @@ public:
 
         // Step 2: Sort karna ~ Har number ke saath uska original index bhi
         // store karte hain, taaki pata rahe number pehle kahan tha.
-        sort(arr.begin(), arr.end());
+        sort(arr.begin(), arr.end()); 
+        // C++ tuple ko pehle first value, phir second aur phir third value ke according sort karta hai.
+        // Isliye sorting ka order automatically ye ban jaata hai: 1. Digit sum ascending, 2. Number ascending, agar digit sum equal ho, 3. Original index ascending, agar pehli dono values equal hon
+        // Yahi question ke sorting rules hain.
+
         vector<bool> visited(nums.size(), false);
-        int swaps = 0;
+        int swaps = 0; // swaps minimum swaps count karega.
 
         // Step 3: Minimum swaps count karna ~ visited array aur cycles ki help
         // se calculate karte hain ki kitne swaps lagenge.
