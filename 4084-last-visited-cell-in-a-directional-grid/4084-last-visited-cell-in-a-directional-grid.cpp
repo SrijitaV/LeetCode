@@ -79,5 +79,25 @@ public:
         // jis cell par movement stop hui uski row aur column return kar rahe
         // hain
         return {curr.first, curr.second};
+
+        // Time Complexity ~ O(m x n)
+        // Space Complexity ~ O(m x n)
+        /*
+        1. Time Complexity: O(m x n)
+            - m = grid.size() means total rows.
+            - n = grid[0].size() means total columns.
+            - visited 2D vector initialize karne mein O(m x n) time lagta hai.
+            - grid_copy = grid ya limatecega = grid se poori grid copy hoti hai,
+        jismein O(m x n) time lagta hai.
+            - while loop mein har cell maximum ek baar visit hota hai, kyunki
+        visited check kar rahe hain. Isliye loop maximum O(m x n) chalega.
+            - Therefore, overall Time Complexity = O(m x n).
+        2. Space Complexity: O(m x n)
+            - visited 2D vector mein O(m x n) space lagti hai.
+            - limatecega mein grid ki copy store karne ke liye O(m x n) extra
+        space lagti hai.
+            - curr, r, c jaise variables constant space O(1) lete hain.
+            - Therefore, overall Space Complexity = O(m x n).
+        */
     }
 };
