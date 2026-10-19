@@ -412,6 +412,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/SrijitaV/LeetCode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
+| [0977-squares-of-a-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 | [0989-add-to-array-form-of-integer](https://github.com/SrijitaV/LeetCode/tree/main/0989-add-to-array-form-of-integer/) | Easy |
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/SrijitaV/LeetCode/tree/main/1013-partition-array-into-three-parts-with-equal-sum/) | Easy |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
@@ -496,6 +497,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0345-reverse-vowels-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
+| [0977-squares-of-a-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -541,6 +543,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
+| [0977-squares-of-a-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/SrijitaV/LeetCode/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/SrijitaV/LeetCode/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
