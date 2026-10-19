@@ -19,7 +19,7 @@ public:
         }
         return ans;
         // Time Complexity: O(n)
-// Space Complexity: O(n)
+        // Space Complexity: O(n)
 
         // my brute force appraoch
         // vector<int> ans;
