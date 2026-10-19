@@ -17,6 +17,8 @@ public:
         //     }
         // }
         // return ans;
+        // Time Complexity: O(n)
+        // Space Complexity: O(1)
 
 
         //                        quite optimized approach
@@ -31,6 +33,8 @@ public:
                 nums[i] = nums[j];
             }
         }    
-        return (i + 1);     
+        return (i + 1);   
+        // Time Complexity: O(n)
+        // Space Complexity: O(1)  
     }
 };
