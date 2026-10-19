@@ -17,6 +17,8 @@ public:
             ans.push_back(i);
         }
         return ans;
+        // Time complexity: O(n) ~ Traversing the array to count elements and constructing the answer array take O(n) time.
+        // Space complexity: O(1) ~ The output array is not included in the space complexity.
 
         // ------ my brute force solution ------
         // sort(nums.begin(), nums.end());
