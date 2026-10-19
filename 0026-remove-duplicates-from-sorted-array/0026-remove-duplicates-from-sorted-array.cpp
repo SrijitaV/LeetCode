@@ -1,10 +1,10 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        //                       code by ME 
+        //                       code by ME
         // int ans = 1;
         // if (nums.empty())
-        //     return 0; 
+        //     return 0;
         // int i = 0, j = 1;
         // while (j < nums.size()) {
         //     if (nums[i] == nums[j]) {
@@ -20,21 +20,18 @@ public:
         // Time Complexity: O(n)
         // Space Complexity: O(1)
 
-
         //                        quite optimized approach
         if (nums.empty())
-            return 0; 
-        int i = 0; 
-        for (int j = 1; j < nums.size(); j++)
-        {
-            if (nums[i] != nums[j])
-            {
-                i++; 
+            return 0;
+        int i = 0;
+        for (int j = 1; j < nums.size(); j++) {
+            if (nums[i] != nums[j]) {
+                i++;
                 nums[i] = nums[j];
             }
-        }    
-        return (i + 1);   
+        }
+        return (i + 1);
         // Time Complexity: O(n)
-        // Space Complexity: O(1)  
+        // Space Complexity: O(1)
     }
 };
