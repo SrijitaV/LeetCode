@@ -14,13 +14,21 @@ public:
             } else if (!isalnum(s[right])) {
                 right--;
             } else {
+                // dono characters ko lowercase mein convert karke compare
+                // karenge taaki 'A' aur 'a' ko same consider karein
                 if (tolower(s[left]) != tolower(s[right])) {
-                    return false;
+                    return false; // agar match nahi hua toh palindrome nahi hai
                 }
+                // agar dono characters match ho gaye toh pointers ko aage badha
+                // denge left right ki taraf aur right left ki taraf move karega
                 left++;
                 right--;
             }
         }
-        return true;
+
+        return true; // agar saare characters match ho gaye toh string palindrome hai
+
+        // Time Complexity : O(n)
+        // Space Complexity : O(1)
     }
 };
