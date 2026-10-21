@@ -15,6 +15,9 @@ public:
             k--;
         }
 
+        // Time Complexity (TC): O(m+n)
+        // Space Complexity (SC): O(1)
+
         // ---------------------------------------------------------------------
 
         // ------------------ my brute force appraoch ------------------
@@ -28,7 +31,7 @@ public:
 
         // Time Complexity: O((m+n) log(m+n))
         // 1. Copy nums2 into nums1: O(n)
-        // 2. Sort nums1: O((m+n)\log(m+n)), since its size is m+n.
+        // 2. Sort nums1: O((m+n) log(m+n)), since its size is m+n.
         // Therefore, the overall TC is : O(n+(m+n) log(m+n))
         // Simplified : O((m+n) log(m+n))
 
