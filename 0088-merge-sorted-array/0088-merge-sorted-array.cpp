@@ -2,14 +2,29 @@ class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
 
-        // my appraoch
-        int j = 0;
-        for (int i = m; i < (m + n); i++) {
-            nums1[i] = nums2[j];
-            j++;
+        // ------------------ two pointer approach ------------------
+        int a1 = m - 1, a2 = n - 1, k = m + n - 1;
+        while (a2 >= 0) {
+            if (a1 >= 0 && nums1[a1] > nums2[a2]) {
+                nums1[k] = nums1[a1];
+                a1--;
+            } else {
+                nums1[k] = nums2[a2];
+                a2--;
+            }
+            k--;
         }
-        sort(nums1.begin(), nums1.end());
-        return;
+
+        // ---------------------------------------------------------------------
+
+        // ------------------ my brute force appraoch ------------------
+        // int j = 0;
+        // for (int i = m; i < (m + n); i++) {
+        //     nums1[i] = nums2[j];
+        //     j++;
+        // }
+        // sort(nums1.begin(), nums1.end());
+        // return;
 
         // Time Complexity: O((m+n) log(m+n))
         // 1. Copy nums2 into nums1: O(n)
