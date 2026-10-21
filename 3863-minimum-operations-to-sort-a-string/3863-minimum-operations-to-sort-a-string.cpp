@@ -20,8 +20,8 @@ public:
         char mn = *min_element(s.begin(), s.end());
         char mx = *max_element(s.begin(), s.end());
 
-        // if the first character is the minimum OR
-        // the last character is the maximum,
+        // if the first character is the minimum ? OR
+        // the last character is the maximum ? ,
         // we can sort the string in just one operation
         if (s[0] == mn || s[n - 1] == mx) {
             return 1;
