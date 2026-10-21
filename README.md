@@ -483,6 +483,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/SrijitaV/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
+| [3863-minimum-operations-to-sort-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3863-minimum-operations-to-sort-a-string/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
