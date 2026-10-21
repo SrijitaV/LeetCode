@@ -4,17 +4,20 @@ public:
 
         // ------------------ two pointer approach ------------------
         int a1 = m - 1, a2 = n - 1, k = m + n - 1;
-        while (a2 >= 0) {
-            if (a1 >= 0 && nums1[a1] > nums2[a2]) {
-                nums1[k] = nums1[a1];
-                a1--;
-            } else {
-                nums1[k] = nums2[a2];
-                a2--;
-            }
-            k--;
-        }
 
+        while (a2 >= 0) { // jab tak nums2 ke elements khatam nahi hote
+            if (a1 >= 0 && nums1[a1] > nums2[a2]) {
+                // agar nums1 ka element bada hai
+                // bade element ko last position pe daal do
+                nums1[k] = nums1[a1];
+                a1--; // nums1 ke pointer ko peeche karo
+            } else {
+                // warna nums2 ka element last position pe daal do
+                nums1[k] = nums2[a2];
+                a2--; // nums2 ke pointer ko peeche karo
+            }
+            k--; // next position pe jaane ke liye
+        }
         // Time Complexity (TC): O(m+n)
         // Space Complexity (SC): O(1)
 
