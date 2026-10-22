@@ -97,3 +97,13 @@ public:
         }
     }
 };
+
+// Time Complexity: O(n)
+//-  find() takes O(n).
+// - check() takes O(n).
+// - reverse() takes O(n).
+// - These operations run a constant number of times.
+// Space Complexity: O(1)
+// - Only a few integer variables are used.
+// - No additional data structure is allocated.
+// - reverse() modifies the array in place.
