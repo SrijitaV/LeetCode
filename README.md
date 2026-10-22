@@ -434,6 +434,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/SrijitaV/LeetCode/tree/main/3904-smallest-stable-index-ii/) | Medium |
+| [3942-minimum-operations-to-sort-a-permutation](https://github.com/SrijitaV/LeetCode/tree/main/3942-minimum-operations-to-sort-a-permutation/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
