@@ -1,5 +1,17 @@
 # 🧩 LeetCode Solutions
 
+
+<p>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  <img src="https://img.shields.io/badge/DSA-555555?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Algorithms-0088CC?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/STATUS-IN_PROGRESS-E5B800?style=for-the-badge" />
+</p>
+
+
 My LeetCode solutions repository for **Data Structures & Algorithms, problem-solving practice, and coding interview preparation**.
 
 This repository contains solutions synced from LeetCode using **LeetSync** and **LeetHub**.
