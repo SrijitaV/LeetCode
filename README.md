@@ -16,6 +16,18 @@ The goal is not just to increase the number of solved problems, but to develop s
 
 ---
 
+
+## 🧭 Quick Navigation
+
+- [📈 Live LeetCode Statistics](#-live-leetcode-statistics)
+- [📊 DSA Progress Dashboard](#-dsa-progress-dashboard)
+- [🗺️ DSA Learning Roadmap](#-dsa-learning-roadmap)
+- [🧩 Problems by Topic](#-problems-by-topic)
+- [🔁 Problem-Solving Patterns](#-problem-solving-patterns)
+- [📝 Revision Checklist](#-revision-checklist)
+
+---
+
 ## 📊 DSA Progress Dashboard
 
 | Status             | Meaning                                                                       |
