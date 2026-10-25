@@ -80,6 +80,63 @@ def get_problem_number(folder_name):
     return int(match.group(1))
 
 
+def update_readme_stats(stats):
+    """Update the repository statistics section in README.md."""
+    readme = ROOT / "README.md"
+
+    if not readme.exists():
+        print("README.md not found; skipping README update.")
+        return
+
+    content = readme.read_text(encoding="utf-8")
+
+    start_marker = "<!-- REPO_STATS_START -->"
+    end_marker = "<!-- REPO_STATS_END -->"
+
+    if start_marker not in content or end_marker not in content:
+        print("README statistics markers missing; skipping update.")
+        return
+
+    data = stats["leetcode"]
+    total = data["solved"]
+
+    def percentage(count):
+        return round(count * 100 / total) if total else 0
+
+    section = f"""### Repository Progress
+
+![Tracked Problems](https://img.shields.io/badge/Tracked-{total}-blue)
+![Easy](https://img.shields.io/badge/Easy-{data['easy']}-brightgreen)
+![Medium](https://img.shields.io/badge/Medium-{data['medium']}-orange)
+![Hard](https://img.shields.io/badge/Hard-{data['hard']}-red)
+
+| Difficulty | Problems | Share of tracked problems |
+|:--|--:|--:|
+| 🟢 Easy | {data['easy']} | {percentage(data['easy'])}% |
+| 🟡 Medium | {data['medium']} | {percentage(data['medium'])}% |
+| 🔴 Hard | {data['hard']} | {percentage(data['hard'])}% |
+| ⚪ Unknown | {data['unknown']} | {percentage(data['unknown'])}% |
+| **Total** | **{total}** | **100%** |
+
+*Automatically generated from `stats.json`. These are repository-tracked
+problems, not your live LeetCode account totals.*
+"""
+
+    start = content.index(start_marker) + len(start_marker)
+    end = content.index(end_marker)
+
+    updated = (
+        content[:start]
+        + "\n\n"
+        + section
+        + "\n"
+        + content[end:]
+    )
+
+    readme.write_text(updated, encoding="utf-8")
+    print("README repository statistics updated.")
+
+
 def main():
     counts = {difficulty: 0 for difficulty in DIFFICULTIES}
     shas = {}
@@ -165,6 +222,8 @@ def main():
         json.dumps(stats, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8"
     )
+
+update_readme_stats(stats)
 
     print(f"Stats generated: {OUTPUT}")
     print(f"Unique problems tracked: {stats['leetcode']['solved']}")
