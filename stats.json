@@ -1,237 +1,697 @@
-
-import hashlib
-import json
-import re
-from pathlib import Path
-
-ROOT = Path(__file__).resolve().parent.parent
-OUTPUT = ROOT / "stats.json"
-
-SOLUTION_EXTENSIONS = {
-    ".cpp", ".cc", ".c", ".h", ".hpp",
-    ".py", ".sql", ".java", ".js", ".ts",
-    ".go", ".rs", ".cs", ".php", ".rb",
-    ".swift", ".kt"
-}
-
-DIFFICULTIES = ("easy", "medium", "hard", "unknown")
-
-
-def sha1_file(path):
-    """Generate a SHA-1 hash of a file's contents."""
-    digest = hashlib.sha1()
-
-    with path.open("rb") as file:
-        for chunk in iter(lambda: file.read(8192), b""):
-            digest.update(chunk)
-
-    return digest.hexdigest()
-
-
-def get_difficulty(folder):
-    """Detect difficulty from common LeetCode README formats."""
-    readme = folder / "README.md"
-
-    if not readme.exists():
-        return "unknown"
-
-    content = readme.read_text(
-        encoding="utf-8",
-        errors="ignore"
-    )
-
-    # Search the beginning of the README to avoid matching
-    # difficulty words mentioned in unrelated explanations.
-    header = content[:3000]
-
-    patterns = [
-        # HTML headings: <h3>Easy</h3>, <h2>Medium</h2>, etc.
-        r"<h[1-6]\b[^>]*>\s*(Easy|Medium|Hard)\s*</h[1-6]\s*>",
-
-        # Markdown headings: ## Easy, ### Medium, etc.
-        r"(?im)^\s*#{1,6}\s*(Easy|Medium|Hard)\s*$",
-
-        # Difficulty: Easy or **Difficulty:** Medium
-        r"(?im)^\s*(?:[-*]\s*)?"
-        r"\*{0,2}Difficulty\*{0,2}\s*[:\-]\s*"
-        r"\*{0,2}(Easy|Medium|Hard)\b",
-
-        # HTML bold text: <strong>Easy</strong> or <b>Hard</b>
-        r"<(?:strong|b)\b[^>]*>\s*"
-        r"(Easy|Medium|Hard)\s*</(?:strong|b)\s*>",
-    ]
-
-    for pattern in patterns:
-        match = re.search(pattern, header, re.IGNORECASE)
-
-        if match:
-            return match.group(1).lower()
-
-    return "unknown"
-
-
-def get_problem_number(folder_name):
-    """Extract the LeetCode problem number from a folder name."""
-    match = re.match(r"^(\d+)-[a-z0-9-]+$", folder_name, re.IGNORECASE)
-
-    if not match:
-        return None
-
-    return int(match.group(1))
-
-
-def update_readme_stats(stats):
-    """Update the repository statistics section in README.md."""
-    readme = ROOT / "README.md"
-
-    if not readme.exists():
-        print("README.md not found; skipping README update.")
-        return
-
-    content = readme.read_text(encoding="utf-8")
-
-    start_marker = "<!-- REPO_STATS_START -->"
-    end_marker = "<!-- REPO_STATS_END -->"
-
-    if start_marker not in content or end_marker not in content:
-        print("README statistics markers missing; skipping update.")
-        return
-
-    data = stats["leetcode"]
-    total = data["solved"]
-
-    def percentage(count):
-        return round(count * 100 / total) if total else 0
-
-    section = f"""### Repository Progress
-
-![Tracked Problems](https://img.shields.io/badge/Tracked-{total}-blue)
-![Easy](https://img.shields.io/badge/Easy-{data['easy']}-brightgreen)
-![Medium](https://img.shields.io/badge/Medium-{data['medium']}-orange)
-![Hard](https://img.shields.io/badge/Hard-{data['hard']}-red)
-
-| Difficulty | Problems | Share of tracked problems |
-|:--|--:|--:|
-| 🟢 Easy | {data['easy']} | {percentage(data['easy'])}% |
-| 🟡 Medium | {data['medium']} | {percentage(data['medium'])}% |
-| 🔴 Hard | {data['hard']} | {percentage(data['hard'])}% |
-| ⚪ Unknown | {data['unknown']} | {percentage(data['unknown'])}% |
-| **Total** | **{total}** | **100%** |
-
-*Automatically generated from `stats.json`. These are repository-tracked
-problems, not your live LeetCode account totals.*
-"""
-
-    start = content.index(start_marker) + len(start_marker)
-    end = content.index(end_marker)
-
-    updated = (
-        content[:start]
-        + "\n\n"
-        + section
-        + "\n"
-        + content[end:]
-    )
-
-    readme.write_text(updated, encoding="utf-8")
-    print("README repository statistics updated.")
-
-
-def main():
-    counts = {difficulty: 0 for difficulty in DIFFICULTIES}
-    shas = {}
-    problems_by_number = {}
-
-    # Track the root README.
-    root_readme = ROOT / "README.md"
-
-    if root_readme.exists():
-        shas["README.md"] = {
-            "": sha1_file(root_readme)
-        }
-
-    # Find all folders that look like LeetCode problems.
-    for folder in sorted(ROOT.iterdir()):
-        if not folder.is_dir():
-            continue
-
-        problem_number = get_problem_number(folder.name)
-
-        if problem_number is None:
-            continue
-
-        # Require at least one recognized solution file.
-        solution_files = [
-            path for path in folder.rglob("*")
-            if path.is_file()
-            and path.suffix.lower() in SOLUTION_EXTENSIONS
-            and ".git" not in path.parts
-        ]
-
-        if not solution_files:
-            continue
-
-        difficulty = get_difficulty(folder)
-
-        # Hash all files inside the problem folder.
-        file_hashes = {}
-
-        for path in sorted(folder.rglob("*")):
-            if not path.is_file() or ".git" in path.parts:
-                continue
-
-            relative_path = path.relative_to(folder).as_posix()
-            file_hashes[relative_path] = sha1_file(path)
-
-        file_hashes["difficulty"] = difficulty
-
-        # Keep each folder's hashes under its original folder name.
-        shas[folder.name] = file_hashes
-
-        # Group differently named folders by problem number.
-        problems_by_number.setdefault(problem_number, []).append({
-            "folder": folder.name,
-            "difficulty": difficulty
-        })
-
-    # Count each LeetCode problem number only once.
-    for problem_number, entries in problems_by_number.items():
-        # Prefer a known difficulty if duplicate folders disagree.
-        known_difficulties = [
-            entry["difficulty"]
-            for entry in entries
-            if entry["difficulty"] != "unknown"
-        ]
-
-        if known_difficulties:
-            difficulty = known_difficulties[0]
-        else:
-            difficulty = "unknown"
-
-        counts[difficulty] += 1
-
-    stats = {
-        "leetcode": {
-            **counts,
-            "solved": sum(counts.values()),
-            "shas": shas
-        }
+{
+  "leetcode": {
+    "easy": 50,
+    "medium": 21,
+    "hard": 1,
+    "unknown": 58,
+    "solved": 130,
+    "shas": {
+      "README.md": {
+        "": "9f04fc0fffdc64e609122a56ef1bbd6a06592825"
+      },
+      "0001-two-sum": {
+        "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
+        "README.md": "349153d852c003cd0dd0bab936d64b5ecc5765bd",
+        "difficulty": "easy"
+      },
+      "0015-3sum": {
+        "0015-3sum.cpp": "2cfd5919e8c8459874012461f4b85ddc0d43cfdc",
+        "README.md": "07acfce72d0c2edd6014629879e313650e7e6072",
+        "difficulty": "medium"
+      },
+      "0020-valid-parentheses": {
+        "0020-valid-parentheses.cpp": "3b9f0ca766ad95c1769c7170c0b94726c3425432",
+        "README.md": "1d8dfe80df5f6a23478fa135ee6104d6da974d29",
+        "difficulty": "easy"
+      },
+      "0026-remove-duplicates-from-sorted-array": {
+        "0026-remove-duplicates-from-sorted-array.cpp": "d9346bd622034d55d8dd0415bd476d6695ecfe4f",
+        "README.md": "779f7cc4c3bca3a574dee6def782699ab64e4eaa",
+        "difficulty": "easy"
+      },
+      "0034-find-first-and-last-position-of-element-in-sorted-array": {
+        "0034-find-first-and-last-position-of-element-in-sorted-array.cpp": "dd96681d3da15456eb784607e81e8f59e818066b",
+        "README.md": "2fcf6b74192b21db40573b3f5b246b037fa2150c",
+        "difficulty": "medium"
+      },
+      "0049-group-anagrams": {
+        "0049-group-anagrams.cpp": "404b7f2187e9237a1c032366060e73b413e3d761",
+        "README.md": "af55a793df5fdb5984dc3fab1618b6bbbc35e999",
+        "difficulty": "medium"
+      },
+      "0058-length-of-last-word": {
+        "0058-length-of-last-word.cpp": "3ccdd4b840a4abcd48d32d0eaf0fedc614530c37",
+        "README.md": "80779a41516d7c4226a511c5b950439d3ff3f19c",
+        "difficulty": "easy"
+      },
+      "0066-plus-one": {
+        "0066-plus-one.cpp": "571c692ba72dca6ec0b3799420a9b5950ae3a64d",
+        "README.md": "ef7743ab33f113996fafea9fc805d68059f9785b",
+        "difficulty": "easy"
+      },
+      "0067-add-binary": {
+        "0067-add-binary.cpp": "fa3a1aeaee6fadaf3e13456c1a6d52b9845982ac",
+        "README.md": "957aedef8f456c7efe16d39e94045f584bc41c7b",
+        "difficulty": "easy"
+      },
+      "0088-merge-sorted-array": {
+        "0088-merge-sorted-array.cpp": "2bd441193a254bcb52a8b83bee5efb934a9489f0",
+        "README.md": "ddbae91cbdac0bd81102c6b8b620e378ec68164a",
+        "difficulty": "easy"
+      },
+      "0118-pascals-triangle": {
+        "0118-pascals-triangle.cpp": "fbbeedf9a222986c16dceeb5662d895c504fbd1c",
+        "README.md": "dc5f7dc5e70d8fd374c01febc7cb269f211875fd",
+        "difficulty": "easy"
+      },
+      "0125-valid-palindrome": {
+        "0125-valid-palindrome.cpp": "48eab233123ad6bcb1024cb3c37b19528209b2f1",
+        "README.md": "36851ae51b5f6680a3fd98cac05a9362ab232484",
+        "difficulty": "easy"
+      },
+      "0136-single-number": {
+        "0136-single-number.cpp": "4004a1ebf6fdb83a9f74317f490fb9bec183bbc8",
+        "README.md": "c840b1bbf203049a2ff97fec374a94d5ec0cd1cb",
+        "difficulty": "easy"
+      },
+      "0167-two-sum-ii-input-array-is-sorted": {
+        "0167-two-sum-ii-input-array-is-sorted.cpp": "f632771c6b92bc5bafd13c9b0f6b6503357ae113",
+        "README.md": "92cd00fe35cc6b0855cfb5620b84969eae0a33e3",
+        "difficulty": "medium"
+      },
+      "0223-rectangle-area": {
+        "0223-rectangle-area.cpp": "2b134fcdc63c0042b3d02e7248bde0e1c08c3a57",
+        "README.md": "794e766e123785e4e82db0e200882abaa7dacf52",
+        "difficulty": "medium"
+      },
+      "0242-valid-anagram": {
+        "0242-valid-anagram.cpp": "eaeef40d5eabd9c6b8b2a956939d7102a7b1b112",
+        "README.md": "8ff760437f3ae194d47ddbfc5fad32d23df85bb2",
+        "difficulty": "easy"
+      },
+      "0263-ugly-number": {
+        "0263-ugly-number.cpp": "283df3202ba609fdb939a7da900a860c477a342d",
+        "README.md": "f96212f235d69b75caff5cc64d9f197cf899a68b",
+        "difficulty": "easy"
+      },
+      "0268-missing-number": {
+        "0268-missing-number.cpp": "c39c9690b7d7461c3fadd2abb7ebda1ae74d9eb6",
+        "README.md": "0785edd022e2099f0ec9a288c9fc10e56e866629",
+        "difficulty": "easy"
+      },
+      "0342-power-of-four": {
+        "0342-power-of-four.cpp": "6c1b8f7d68b6496373a4f5bae507c861d3aae690",
+        "README.md": "7456968ba83fd9f71bb6956746b5f78cf9e1ee7f",
+        "difficulty": "easy"
+      },
+      "0345-reverse-vowels-of-a-string": {
+        "0345-reverse-vowels-of-a-string.cpp": "899959b5d7a7e366a1c219b93e8c77d68b1c8c4b",
+        "README.md": "b6967622342fb4e07e799c7d16246ad7f50e71fb",
+        "difficulty": "easy"
+      },
+      "0350-intersection-of-two-arrays-ii": {
+        "0350-intersection-of-two-arrays-ii.cpp": "b28431de076d457842729c1e3fa2c186c3fddd91",
+        "README.md": "00a6c2813a9acd4a0c05531feef87ffe2d5301f6",
+        "difficulty": "easy"
+      },
+      "0389-find-the-difference": {
+        "0389-find-the-difference.cpp": "d5c341473b9c15b1edae7acf0f6280ac40276b98",
+        "README.md": "8f9fd6ed85535e2a05a2db821115706656eef513",
+        "difficulty": "easy"
+      },
+      "0500-keyboard-row": {
+        "0500-keyboard-row.cpp": "74196976f8eb760370123b762616a70b311b514a",
+        "README.md": "ab6137bf9e510a8441f8b55fc4ddbcbff2ef678a",
+        "difficulty": "easy"
+      },
+      "0509-fibonacci-number": {
+        "0509-fibonacci-number.cpp": "57371a134ddef7dc0d737d249324ac99856c5407",
+        "README.md": "03ce26b3529e5a53eed9c943525650f3c0ee55d7",
+        "difficulty": "easy"
+      },
+      "0594-longest-harmonious-subsequence": {
+        "0594-longest-harmonious-subsequence.cpp": "c7d133f2941caa49405e39bf0dd4901cf2f5ec90",
+        "README.md": "3eee714f1c5169d64aae7bbd901c8f88a592ccbc",
+        "difficulty": "easy"
+      },
+      "0633-sum-of-square-numbers": {
+        "0633-sum-of-square-numbers.cpp": "1e99180f2f97c1db2bc2b859ed9f189d6be05401",
+        "README.md": "eb21dcfa8aaef5ccdc6eddcb0f5988c0bfeaee29",
+        "difficulty": "medium"
+      },
+      "0643-maximum-average-subarray-i": {
+        "0643-maximum-average-subarray-i.cpp": "4c795b73b2231d9730b10cb134242152ed7b6426",
+        "README.md": "d9a4dd6a786e675bdff5d36c826075c01b76d213",
+        "difficulty": "easy"
+      },
+      "0836-rectangle-overlap": {
+        "0836-rectangle-overlap.cpp": "23bab6e6244b47a441d4b962378fb82109b18ced",
+        "README.md": "46c46655b0176e6ddaf4d26f51510609123b6259",
+        "difficulty": "easy"
+      },
+      "0856-score-of-parentheses": {
+        "0856-score-of-parentheses.cpp": "df9a5a4ace175da704d42f306765a39c9a19e0d9",
+        "README.md": "1d521cb5d159256252f436cdb39ffcff14ae9229",
+        "difficulty": "medium"
+      },
+      "0877-stone-game": {
+        "0877-stone-game.cpp": "a219ef67e05b7817350247602a4b4cecba5df917",
+        "README.md": "2e5684d4cbda764659852a822c65e7449d76a875",
+        "difficulty": "medium"
+      },
+      "0921-minimum-add-to-make-parentheses-valid": {
+        "0921-minimum-add-to-make-parentheses-valid.cpp": "4c17029c79e36f638f82ba53d0183955cc126b2d",
+        "README.md": "3ddfb0a5bd7c3c91a302a7e35d80b18383dc62aa",
+        "difficulty": "medium"
+      },
+      "0977-squares-of-a-sorted-array": {
+        "0977-squares-of-a-sorted-array.cpp": "0c0c578aa69d4c891f9ff48b920dad016ea8802e",
+        "README.md": "77fb31f0ff58d868fcbe67419cb19c4cd7d6b98a",
+        "difficulty": "easy"
+      },
+      "0989-add-to-array-form-of-integer": {
+        "0989-add-to-array-form-of-integer.cpp": "845ca34c0a2f94d7a5b17cc178787a8f661d3298",
+        "README.md": "b7c34be6a23d994edfc503231382a851b49f0cce",
+        "difficulty": "easy"
+      },
+      "1013-fibonacci-number": {
+        "README.md": "843b650db560e7d3ead0429b28fcafcd38cf94c4",
+        "fibonacci-number.cpp": "e6feaea6a0883a768adba91f1e40b538c904798e",
+        "difficulty": "unknown"
+      },
+      "1013-partition-array-into-three-parts-with-equal-sum": {
+        "1013-partition-array-into-three-parts-with-equal-sum.cpp": "f927038c839c74e5e40c46f542b6d06b65312292",
+        "README.md": "9dc708682b6043f707d9d57648a0efa45143d369",
+        "difficulty": "easy"
+      },
+      "1019-squares-of-a-sorted-array": {
+        "README.md": "b308bb7fe4570f6c279f6d50c0ddb6c187c15e6d",
+        "squares-of-a-sorted-array.cpp": "95f969a41bfba1b699f8cdbf7d6206c0e847d92d",
+        "difficulty": "unknown"
+      },
+      "1047-remove-all-adjacent-duplicates-in-string": {
+        "1047-remove-all-adjacent-duplicates-in-string.cpp": "2f6c2ba1d448fb577dfcd8d8c8049483c3ba28a0",
+        "README.md": "7cd44c6b68b15acfef7e3713ae0b68931b353a3c",
+        "difficulty": "easy"
+      },
+      "1051-height-checker": {
+        "1051-height-checker.cpp": "1a7630c5b6df5fbe9de94000a75a4b3f78677bdd",
+        "README.md": "a61965296a1f76cc4d5fc4f5dbe3e285671294f4",
+        "difficulty": "easy"
+      },
+      "11-container-with-most-water": {
+        "README.md": "d3a9dca28a4f5f8ac558cba8c4bb4ea462a080d4",
+        "container-with-most-water.cpp": "5a7b72e833e7996036a34abf04b456a8c2e9cd3f",
+        "difficulty": "unknown"
+      },
+      "118-pascals-triangle": {
+        "Notes.md": "07dce88c9e1fc6ad5cadc54d307cacc090d09313",
+        "README.md": "3c5359a72dc42207f3651633eb3726724dff817d",
+        "pascals-triangle.cpp": "fbbeedf9a222986c16dceeb5662d895c504fbd1c",
+        "difficulty": "unknown"
+      },
+      "1205-defanging-an-ip-address": {
+        "README.md": "7145744604d5cfe533ff134db0e02ee1c23164d6",
+        "defanging-an-ip-address.cpp": "df058b168c3e9bb714ce3824725dba598da32b54",
+        "difficulty": "unknown"
+      },
+      "13-roman-to-integer": {
+        "README.md": "7d388e86273ae9564db54c1ea663af537a22ccdb",
+        "roman-to-integer.cpp": "cf2e29afea63ebdde6da9f2242ed5ba23cd414f8",
+        "difficulty": "unknown"
+      },
+      "1317-convert-integer-to-the-sum-of-two-no-zero-integers": {
+        "1317-convert-integer-to-the-sum-of-two-no-zero-integers.cpp": "964f46300c065b9d7015ccd0e6dd50777b50ed9e",
+        "README.md": "d2483bd99a772bbe2ed1333880a05386e28fc234",
+        "difficulty": "easy"
+      },
+      "136-single-number": {
+        "README.md": "7fc46be37a17d37a0408aefd642f25794103f1c9",
+        "single-number.cpp": "5ce11a73bacfbfca75d629ea5c2038436dd4dd2a",
+        "difficulty": "unknown"
+      },
+      "137-single-number-ii": {
+        "README.md": "84bb704adee859573b83f3900d7ebb538b82ea95",
+        "single-number-ii.cpp": "98b330d5eeb24e118b76d6e8bf1769d1ef399dd6",
+        "difficulty": "unknown"
+      },
+      "14-longest-common-prefix": {
+        "README.md": "9515840b4700a13546f123f3a5ba65985362e974",
+        "longest-common-prefix.cpp": "ef6b8a28a480119c9e38b719e37b3f7fbfe31edc",
+        "difficulty": "unknown"
+      },
+      "1406-subtract-the-product-and-sum-of-digits-of-an-integer": {
+        "README.md": "ede801dd06a6664ca1b516ef7f3438c440bbb8a7",
+        "subtract-the-product-and-sum-of-digits-of-an-integer.cpp": "fc35d5563bb9aaf45bd9aecd195eba70948a334e",
+        "difficulty": "unknown"
+      },
+      "1448-maximum-69-number": {
+        "README.md": "d0cfae970e85cc0bbcc117ef3a8384e4bd1ad9a6",
+        "maximum-69-number.cpp": "147c50e70b2255c263108ca04a2c0af3a45ad57a",
+        "difficulty": "unknown"
+      },
+      "1505-create-target-array-in-the-given-order": {
+        "README.md": "ccf4afa1894b88f9a335535acaf1360615ee0b68",
+        "create-target-array-in-the-given-order.cpp": "9f2c256fee758a1c3b2a162c711de576e85750fe",
+        "difficulty": "unknown"
+      },
+      "153-find-minimum-in-rotated-sorted-array": {
+        "README.md": "2ad53e6f5e180817c3ccad49aa2697264e27e55e",
+        "find-minimum-in-rotated-sorted-array.cpp": "733184a31ac46c5da85f3cc63c61297467c3f49e",
+        "difficulty": "unknown"
+      },
+      "154-find-minimum-in-rotated-sorted-array-ii": {
+        "README.md": "a98f68ce2c76842ff50eca841c947ff50bbe7b37",
+        "find-minimum-in-rotated-sorted-array-ii.cpp": "c14f3ccc3be27aa5c8ebb2b4e8b7edae7ce745a0",
+        "difficulty": "unknown"
+      },
+      "1574-maximum-product-of-two-elements-in-an-array": {
+        "README.md": "54f9c0113ffcfc0d43165a7b4be1e51451ae359e",
+        "maximum-product-of-two-elements-in-an-array.cpp": "310a1e146a22650559eebdf31252b233f5a06e08",
+        "difficulty": "unknown"
+      },
+      "1580-shuffle-the-array": {
+        "README.md": "926aa360466c9ea2e5b8e2c1693ab5c9847d07bd",
+        "shuffle-the-array.cpp": "9a9cac626246d536de766d2d17079ba1d2ff2ef4",
+        "difficulty": "unknown"
+      },
+      "1603-running-sum-of-1d-array": {
+        "README.md": "c772e42a0819af7e0a8f9a72940e1348fc03fe6f",
+        "running-sum-of-1d-array.cpp": "82de18a7e064ba104ef168ff2cc9644aac6910dd",
+        "difficulty": "unknown"
+      },
+      "1614-maximum-nesting-depth-of-the-parentheses": {
+        "1614-maximum-nesting-depth-of-the-parentheses.cpp": "177d30b39716e5a11ca5112d842bf0b14195caab",
+        "README.md": "952983a6651fd13c4d7123137d03b1a8cf67b373",
+        "difficulty": "easy"
+      },
+      "1635-number-of-good-pairs": {
+        "README.md": "c674607ab2422c728a841617994fe76fb247ae58",
+        "number-of-good-pairs.cpp": "4268fa2b88246c4e83dfc51d5547a6dcd76722ca",
+        "difficulty": "unknown"
+      },
+      "1658-minimum-operations-to-reduce-x-to-zero": {
+        "1658-minimum-operations-to-reduce-x-to-zero.cpp": "1882129684de064dc5034cee69eca4ae789b50c6",
+        "README.md": "a8836cd39950a220bfed6959b188feb0bcca7a2c",
+        "difficulty": "medium"
+      },
+      "167-two-sum-ii-input-array-is-sorted": {
+        "README.md": "8dcbb694e3d20c00f8cb93923ec69c6779bca4dd",
+        "two-sum-ii-input-array-is-sorted.cpp": "ef33b140f89091305294d8c32785a6824f92bd6e",
+        "difficulty": "unknown"
+      },
+      "169-majority-element": {
+        "README.md": "e29ad35c29b00f22fdef7b01c3cc906c7c0b26aa",
+        "majority-element.cpp": "d40623abcfcd6b2f226e14b89312a510b65f75cf",
+        "difficulty": "unknown"
+      },
+      "175-combine-two-tables": {
+        "README.md": "b03bb8e903354b7cd50b67e9b6c4e98a043163a7",
+        "combine-two-tables.sql": "c946f1ae634042219429470b3be3e5aad350135f",
+        "difficulty": "unknown"
+      },
+      "1781-check-if-two-string-arrays-are-equivalent": {
+        "README.md": "eacbd0f46bda9f628de8c1675a0e46635f568374",
+        "check-if-two-string-arrays-are-equivalent.cpp": "1c9860ec2cf1f0c6f9df75cd8340a187552fc31d",
+        "difficulty": "unknown"
+      },
+      "1791-richest-customer-wealth": {
+        "README.md": "66b3165883079f717c77a472377d349ede2b9d30",
+        "richest-customer-wealth.cpp": "ef495aabfdb1b8ced147767d7830b5c400879e8d",
+        "difficulty": "unknown"
+      },
+      "189-rotate-array": {
+        "README.md": "babbc91ba7ff9f07c7fe0cd57b49f003a6083d2f",
+        "rotate-array.cpp": "d207a455223c48bd74c89c256392147be06be301",
+        "difficulty": "unknown"
+      },
+      "1908-recyclable-and-low-fat-products": {
+        "README.md": "310a4d8c4ac2a0b2402eeda6ca6e55501fd82c01",
+        "recyclable-and-low-fat-products.sql": "f71f1cae2d66f9ae3bc7ba0303da4a5e15d3ad8d",
+        "difficulty": "unknown"
+      },
+      "1910-remove-all-occurrences-of-a-substring": {
+        "1910-remove-all-occurrences-of-a-substring.cpp": "ce16d857f06163bdedf015fd14e328f9470dd16a",
+        "README.md": "970f842c4d4c698c46e920e7a4be86fe3c2ca2e9",
+        "difficulty": "medium"
+      },
+      "2048-build-array-from-permutation": {
+        "README.md": "f27eb3200f776f198c887eb060c8d519680d67ef",
+        "build-array-from-permutation.cpp": "471d0cd47a21185ff85d04a6803de3c4b06a6c4d",
+        "difficulty": "unknown"
+      },
+      "2058-concatenation-of-array": {
+        "README.md": "ccd742fe03d833f6e529d27f0eccacefef2ca555",
+        "concatenation-of-array.cpp": "1a1a630ca4e9f216fe1ac3ab269ba5f7d430fea0",
+        "difficulty": "unknown"
+      },
+      "2089-find-target-indices-after-sorting-array": {
+        "2089-find-target-indices-after-sorting-array.cpp": "834d5569b943ba2e07259e03f3ffc63e9e346424",
+        "README.md": "e573c7ced57e233f73bf81d2c0e7482f3aa90d0c",
+        "difficulty": "easy"
+      },
+      "2137-final-value-of-variable-after-performing-operations": {
+        "README.md": "43bf96865347e7c0be9b7526d371583552c7d4a7",
+        "final-value-of-variable-after-performing-operations.cpp": "3a77dbb9e42f650a5b8855c9a95155e6fdb86868",
+        "difficulty": "unknown"
+      },
+      "217-contains-duplicate": {
+        "README.md": "6d61ecf35b2a190103c3e99e3a9cdc3decfef11d",
+        "contains-duplicate.cpp": "30c41454c3bdd48f18f4a2dca3de932f66a48d6a",
+        "difficulty": "unknown"
+      },
+      "229-majority-element-ii": {
+        "README.md": "6a7fb39ed2e41d4f44fae02f72007260c5733351",
+        "majority-element-ii.cpp": "45fc213d7c4fac85541c28afb5040607f2355c26",
+        "difficulty": "unknown"
+      },
+      "231-power-of-two": {
+        "README.md": "4174a8a5e3f9dbc56fba1edac03e148ed490feab",
+        "power-of-two.cpp": "c79f57591440c71d1902e50bd7cc7973e797c51a",
+        "difficulty": "unknown"
+      },
+      "2383-add-two-integers": {
+        "README.md": "5fea741087e71ae7378d0c52a73bb247f0368aed",
+        "add-two-integers.cpp": "260815f50b444a21d80cfd54c46c367f39ddff69",
+        "difficulty": "unknown"
+      },
+      "240-search-a-2d-matrix-ii": {
+        "README.md": "518221c120dfd9b5639b8b56afdffdf7b4a6966e",
+        "search-a-2d-matrix-ii.cpp": "b9f298f76817fafd75a001ca5e0aefd162aed52e",
+        "difficulty": "unknown"
+      },
+      "2409-count-days-spent-together": {
+        "2409-count-days-spent-together.cpp": "eb267528825f248bd12c9edb9f4fb0fde54469d4",
+        "README.md": "838ada789206f661789d2f1e12564dabd2ca4bea",
+        "difficulty": "easy"
+      },
+      "242-valid-anagram": {
+        "README.md": "145e67ae86828039eb191c9fb4e4585ff645c29c",
+        "valid-anagram.cpp": "65acca8bd71bd9c2cffaaacbe2b561829650f12b",
+        "difficulty": "unknown"
+      },
+      "2469-convert-the-temperature": {
+        "2469-convert-the-temperature.cpp": "0a2a9234214761ea74199d1f51e4ffed0eebe82a",
+        "README.md": "df59b83445438ee247c7368e3c2bdf2d3b30ce55",
+        "difficulty": "easy"
+      },
+      "2485-find-the-pivot-integer": {
+        "2485-find-the-pivot-integer.cpp": "9581be7d1f62da6780638b31c8253850080eb012",
+        "README.md": "e55d172ddf93e61775d5b505753aa0a050df6c03",
+        "difficulty": "easy"
+      },
+      "2556-convert-the-temperature": {
+        "README.md": "9204e5e18a1cffe408e5d050988086dab05f1d90",
+        "convert-the-temperature.cpp": "047f4932b1502268dbdefc161c6fb2105ee4bd72",
+        "difficulty": "unknown"
+      },
+      "258-add-digits": {
+        "README.md": "15e41299910faf63e96c9a554ec228b32c5d4ab7",
+        "add-digits.cpp": "2a344f6517c571a425f3e3b76ffe84f7e4b8ad2f",
+        "difficulty": "unknown"
+      },
+      "260-single-number-iii": {
+        "README.md": "cba146635d30b41d890853f3e262e6c6118aa7d3",
+        "single-number-iii.cpp": "401bc9a5f3975db8704c2efdb985aab0a6abac96",
+        "difficulty": "unknown"
+      },
+      "2778-sum-of-squares-of-special-elements": {
+        "2778-sum-of-squares-of-special-elements.cpp": "11993cc6671a2dc5a3471744b9ab3701e1db98ae",
+        "README.md": "66b2cb97f8b9317883ddf0fdddd2a475db66f7ed",
+        "difficulty": "easy"
+      },
+      "278-first-bad-version": {
+        "README.md": "71e21e5d72024f1a14795218a41b5b6a4eb29b29",
+        "first-bad-version.cpp": "dcac346b3de657848e13922f2b42b96e29dd6307",
+        "difficulty": "unknown"
+      },
+      "2824-count-pairs-whose-sum-is-less-than-target": {
+        "2824-count-pairs-whose-sum-is-less-than-target.cpp": "7580ab82403715be49eaac5709017ffb7cdec0a3",
+        "README.md": "fbb697d319cb54ffd9b052b46581a3a75f0c5d11",
+        "difficulty": "easy"
+      },
+      "283-move-zeroes": {
+        "README.md": "9e3c49af1732803b268b6d747a4cbf2c3ede9425",
+        "move-zeroes.cpp": "1d7b005a8364a4c3e6a3f3da956fab644ecf9438",
+        "difficulty": "unknown"
+      },
+      "287-find-the-duplicate-number": {
+        "README.md": "fcbe41f1b6c654b1e794fc081ca00d6016cad72b",
+        "find-the-duplicate-number.cpp": "100720f1850fea58212ea8943de4d9747650d59d",
+        "difficulty": "unknown"
+      },
+      "2897-apply-operations-on-array-to-maximize-sum-of-squares": {
+        "2897-apply-operations-on-array-to-maximize-sum-of-squares.cpp": "300dc0523441e8b530103660cf75d5506dce9e36",
+        "README.md": "dac128d94373014b43e028c65485ba7045679aa9",
+        "difficulty": "hard"
+      },
+      "2913-subarrays-distinct-element-sum-of-squares-i": {
+        "2913-subarrays-distinct-element-sum-of-squares-i.cpp": "b2dcb2fed3a7868b3ff636039a2ebc67fd1a8550",
+        "README.md": "441c0801c753075a81d821a714ae9cbb1838a731",
+        "difficulty": "easy"
+      },
+      "2917-count-pairs-whose-sum-is-less-than-target": {
+        "README.md": "e08066e14f1edbbb8d0a92d95991286a8c2523df",
+        "count-pairs-whose-sum-is-less-than-target.cpp": "1ec9a05f5d4d6b9d846caaf4e9a3c2fbbf217878",
+        "difficulty": "unknown"
+      },
+      "3028-ant-on-the-boundary": {
+        "3028-ant-on-the-boundary.cpp": "9b2ff7c443fad0f2430fd13b77896b10844e2e17",
+        "README.md": "5eb2bfd0812542b65bbddf3f49c408485ad9e5a3",
+        "difficulty": "easy"
+      },
+      "3033-modify-the-matrix": {
+        "3033-modify-the-matrix.cpp": "dbc59978d7dc5b721c97c2408f2d029814ea5127",
+        "README.md": "49d653ed1e741fcb74b657899d1e4b3c96c71f74",
+        "difficulty": "easy"
+      },
+      "3046-split-the-array": {
+        "3046-split-the-array.cpp": "bf572ade50fc19dbdb6aee6d012e70399b71f082",
+        "README.md": "86f73d0a20a4c178dae5f70062324aa4ffe7cca4",
+        "difficulty": "easy"
+      },
+      "3069-distribute-elements-into-two-arrays-i": {
+        "3069-distribute-elements-into-two-arrays-i.cpp": "af20ee9b4338b6707144ac2e10dfaede6264c68c",
+        "README.md": "28e2de9edc4c1604facee28f3c9eff4b0005940d",
+        "difficulty": "easy"
+      },
+      "344-reverse-string": {
+        "README.md": "2ecd6e2242a3b4706ae3c653c0977222885ffaf7",
+        "reverse-string.cpp": "4ae2357109b34a46b3bad6dc7898339a6946dfb2",
+        "difficulty": "unknown"
+      },
+      "3471-find-the-largest-almost-missing-integer": {
+        "3471-find-the-largest-almost-missing-integer.cpp": "9f9b17e2cc1b9eb76e11910c20152be8a779a3b7",
+        "README.md": "ccd67639305b79116766fb34e4c74ebc91728acf",
+        "difficulty": "easy"
+      },
+      "3483-unique-3-digit-even-numbers": {
+        "3483-unique-3-digit-even-numbers.cpp": "a859c0da049434751a6704feafd94662d965dd63",
+        "README.md": "d98bb051520f385c69e16333a6fbdb9b10f8d98c",
+        "difficulty": "easy"
+      },
+      "349-intersection-of-two-arrays": {
+        "README.md": "b23f02e33692ec0bd0012490da9cc34a45ec5b07",
+        "intersection-of-two-arrays.cpp": "32ecf86c5e4b4d91dc687b9ef4a30af363eff5fc",
+        "difficulty": "unknown"
+      },
+      "3498-reverse-degree-of-a-string": {
+        "3498-reverse-degree-of-a-string.cpp": "83f2bd025c99101b5a78bf8a30cbac47a8b6eae7",
+        "README.md": "a866fa358d1cf5ff3481cdba4690ecdcf4cdc93c",
+        "difficulty": "easy"
+      },
+      "35-search-insert-position": {
+        "README.md": "46b6bbe61f199368813a6ce80d3d1ab54cbf7e4a",
+        "search-insert-position.cpp": "31c22057e6a83d2adf5f04abfb4fd5f20bc3ef9e",
+        "difficulty": "unknown"
+      },
+      "3550-smallest-index-with-digit-sum-equal-to-index": {
+        "3550-smallest-index-with-digit-sum-equal-to-index.cpp": "4f9ea22922f2de6113fe36bb1630c268e11a024b",
+        "README.md": "eecefcc6ed1bf15dcbcb0cc5bd336a6a5c392944",
+        "difficulty": "easy"
+      },
+      "3551-minimum-swaps-to-sort-by-digit-sum": {
+        "3551-minimum-swaps-to-sort-by-digit-sum.cpp": "0d1c2a88c59c3716ae00317ea88f7be8bbe20d06",
+        "README.md": "c93abbb41d486569cd27d77136f69e20d355b8a6",
+        "difficulty": "medium"
+      },
+      "3622-check-divisibility-by-digit-sum-and-product": {
+        "3622-check-divisibility-by-digit-sum-and-product.cpp": "d060b61fbbc145b0f99ca3309d837cc48552d6d5",
+        "README.md": "7aaeaf18f7fac04e506b8a50342b3d3ca0066145",
+        "difficulty": "easy"
+      },
+      "3626-smallest-divisible-digit-product-i": {
+        "README.md": "ce63460d022ee89798acf7c61706394e584fa08c",
+        "smallest-divisible-digit-product-i.cpp": "6d9fbf33b989e83f635812013c930f0f4ea6e233",
+        "difficulty": "unknown"
+      },
+      "3644-maximum-k-to-sort-a-permutation": {
+        "3644-maximum-k-to-sort-a-permutation.cpp": "09032b961c8cf5710c81614d9df57a22c5030566",
+        "README.md": "62e488b67da6a155418adad07ef2f6a44b59d75b",
+        "difficulty": "medium"
+      },
+      "3718-smallest-missing-multiple-of-k": {
+        "3718-smallest-missing-multiple-of-k.cpp": "388739e66d5fb9acddfdd08b84d6df5bfc88cdaa",
+        "README.md": "8340768eeae4bac4f02173650095081a7eb991d1",
+        "difficulty": "easy"
+      },
+      "3723-maximize-sum-of-squares-of-digits": {
+        "3723-maximize-sum-of-squares-of-digits.cpp": "3c9f915da969087f8b512ae2f329e1b1497e93f7",
+        "README.md": "934788ca6ca284951a8ee2cd1924bee72d69f007",
+        "difficulty": "medium"
+      },
+      "3727-maximum-alternating-sum-of-squares": {
+        "3727-maximum-alternating-sum-of-squares.cpp": "a825cdd0219d8639b5dcb67ba6e98102cbf7ed36",
+        "README.md": "0007d42a3c1739663daee48e2bef673954bfdf73",
+        "difficulty": "medium"
+      },
+      "383-ransom-note": {
+        "README.md": "fcd8d1398042a0ed0b4b2cd5e0c0babdc673134c",
+        "ransom-note.cpp": "d56d1c20c20a01347c40678e581548ee861b3d69",
+        "difficulty": "unknown"
+      },
+      "3863-minimum-operations-to-sort-a-string": {
+        "3863-minimum-operations-to-sort-a-string.cpp": "793265d14fe988afb02a9e4a5a8dca4370cba462",
+        "README.md": "35e1264242554a8216c694176a4ac078bd506f5a",
+        "difficulty": "medium"
+      },
+      "387-first-unique-character-in-a-string": {
+        "Notes.md": "e2feb733b2554006ec6a506d6beba17d523570b9",
+        "README.md": "a01d1e9700b71d5f7b87340b861ab97c81f6681b",
+        "first-unique-character-in-a-string.cpp": "9888a23650e51fd63415cbdfcba3414c5d3eb318",
+        "difficulty": "unknown"
+      },
+      "3870-count-commas-in-range": {
+        "3870-count-commas-in-range.cpp": "d39f3945684342f97476ae4105c9c387289ca884",
+        "README.md": "bdbaea6f39429765fdfe7da0cfb9050e32209fd0",
+        "difficulty": "easy"
+      },
+      "3871-count-commas-in-range-ii": {
+        "3871-count-commas-in-range-ii.cpp": "11e9b241b1f793391967ebe670f00e4f227c7986",
+        "README.md": "2692de31ea8c692546e4b49b245e26539f5ff852",
+        "difficulty": "medium"
+      },
+      "3875-construct-uniform-parity-array-i": {
+        "3875-construct-uniform-parity-array-i.cpp": "2cdc734391428441f87438730808d2925beeb48c",
+        "README.md": "eebccd67692d68714bb067680593b39998bf2041",
+        "difficulty": "easy"
+      },
+      "3903-smallest-stable-index-i": {
+        "3903-smallest-stable-index-i.cpp": "1d840b166ee96e15a20a2cdcdb6701e66b1dd71c",
+        "README.md": "3f83811df4b1089dac6a7fc2e7be1b13a06c6d2b",
+        "difficulty": "easy"
+      },
+      "3904-smallest-stable-index-ii": {
+        "3904-smallest-stable-index-ii.cpp": "293d4c99d471c0aff6c840ee8353f797edeb7a14",
+        "README.md": "f1429b7a86223b3419c759128a640bd7fdcc8fa2",
+        "difficulty": "medium"
+      },
+      "3942-minimum-operations-to-sort-a-permutation": {
+        "3942-minimum-operations-to-sort-a-permutation.cpp": "0feb8904d7153d121588e9a006cde989e5d13bf6",
+        "README.md": "71af62a594e249cabc98f4ec49bfe374c95779e3",
+        "difficulty": "medium"
+      },
+      "3995-gcd-of-odd-and-even-sums": {
+        "README.md": "0e6c8b03f05600ae9081cd1a4c409b4466503a5b",
+        "gcd-of-odd-and-even-sums.cpp": "53dff789b36099ff98816c5da6ec03b2a896fcfa",
+        "difficulty": "unknown"
+      },
+      "4020-elevator-requests-i": {
+        "4020-elevator-requests-i.cpp": "565d7842d3e7e44423c7a5d25d16d92bcd653895",
+        "README.md": "68c2e6b1362a229ac444d97e04396980c5b7fd61",
+        "difficulty": "easy"
+      },
+      "4033-longest-subsequence-with-non-zero-bitwise-xor": {
+        "Notes.md": "03fb002a2a94caa82dfdab961d0e3baab42413bf",
+        "README.md": "3cd82418430adb0ddf5fddff719313517afff613",
+        "longest-subsequence-with-non-zero-bitwise-xor.cpp": "3ae8106699d8baf6b90c134f16840eefcdd67401",
+        "difficulty": "unknown"
+      },
+      "4039-sum-of-decoded-numbers": {
+        "4039-sum-of-decoded-numbers.cpp": "2f5afa49ce2faedc9bea9afd7872f1c10efeaae3",
+        "README.md": "0107391dcf2d303de09e79c20e1ca83d9cbfabd3",
+        "difficulty": "medium"
+      },
+      "4084-last-visited-cell-in-a-directional-grid": {
+        "4084-last-visited-cell-in-a-directional-grid.cpp": "f9922770db7d564b0d69423c135d58b27541d740",
+        "README.md": "74b4a6da9e073805997dc72c09299cb6b2e2724e",
+        "difficulty": "medium"
+      },
+      "4107-find-missing-elements": {
+        "README.md": "5d2a6da56acbef2625d3396fdc6d379632bc189e",
+        "find-missing-elements.cpp": "b57a145317e404c8d8d2405264c17c8294f26404",
+        "difficulty": "unknown"
+      },
+      "4341-maximum-valid-pair-sum": {
+        "README.md": "c894925a0e3d215ffaa75a4fa63257c8935941d6",
+        "maximum-valid-pair-sum.cpp": "1b626ec5c1c6a59ab7686c7739b8b5f1e300ada1",
+        "difficulty": "unknown"
+      },
+      "4356-sum-of-integers-with-maximum-digit-range": {
+        "README.md": "4ff152088f0bfc2bbe019797de4d7041a11b3434",
+        "sum-of-integers-with-maximum-digit-range.cpp": "9a9004e980fb7c088b6577870a0afce6f222b95f",
+        "difficulty": "unknown"
+      },
+      "442-find-all-duplicates-in-an-array": {
+        "README.md": "84b905385b9a6b21d521b57b069d0997028f8e2b",
+        "find-all-duplicates-in-an-array.cpp": "bfc003323007f26a43c164f0c87a06e3b67e36f5",
+        "difficulty": "unknown"
+      },
+      "50-powx-n": {
+        "README.md": "d7a846252b5035b33ca56e255bf315a837f16c03",
+        "powx-n.cpp": "ffce2f0cd41c5b6a83ca139d4e12235ad449d3b3",
+        "difficulty": "unknown"
+      },
+      "504-base-7": {
+        "README.md": "ccffecc851666208b132ed16d5041df49fe589d9",
+        "base-7.cpp": "a82be9835fc24f2893e50e1594159d5fa4a2649e",
+        "difficulty": "unknown"
+      },
+      "506-relative-ranks": {
+        "README.md": "ac881dc93986efdbf13b299e043e8ae17bd2d93f",
+        "relative-ranks.cpp": "8737e723ca24a16c1cc8957f28203bd91a1129f5",
+        "difficulty": "unknown"
+      },
+      "54-spiral-matrix": {
+        "README.md": "805780fc9615b19696bececf478975fdf4acddc2",
+        "spiral-matrix.cpp": "2ce62b819c73451f5dc65d85d31b2b504b2a2f80",
+        "difficulty": "unknown"
+      },
+      "7-reverse-integer": {
+        "README.md": "0c61b1b05df57a04fc393a6d0ac8e6b69803101d",
+        "reverse-integer.cpp": "6125ca049f57df752fba560a4dc552af7a98ac57",
+        "difficulty": "unknown"
+      },
+      "75-sort-colors": {
+        "README.md": "893864582be6da86292236ab15ba24ee0b3c187e",
+        "sort-colors.cpp": "721a3349541b323a99dcea1294c24e24f04be328",
+        "difficulty": "unknown"
+      },
+      "792-binary-search": {
+        "README.md": "f8138e9873c79972ce77bc6d8775b5bc48c6335a",
+        "binary-search.cpp": "16572165e8ac2d361cc5f3b34d7e11b691a29b4e",
+        "difficulty": "unknown"
+      },
+      "88-merge-sorted-array": {
+        "README.md": "3445b361afd130db40e4ba4c74fa30395731f116",
+        "merge-sorted-array.cpp": "52c6408db5227a03435706e2e2a556511b14a867",
+        "difficulty": "unknown"
+      },
+      "882-peak-index-in-a-mountain-array": {
+        "README.md": "b9ffc90c8a4a57fd7f593e34cb028455da7b9a3b",
+        "peak-index-in-a-mountain-array.cpp": "b4e3a65eb8a91bf47c6492d93a40d3990bec1c4f",
+        "difficulty": "unknown"
+      },
+      "9-palindrome-number": {
+        "README.md": "4eaa14df792b6c77f32f2277a93fde5075f72178",
+        "palindrome-number.cpp": "1e2cde308e29b849a5379ec7e1a5fb8d62c6a331",
+        "difficulty": "unknown"
+      },
+      "948-sort-an-array": {
+        "README.md": "26a3983f2ee708aa3feae5189a9dc545c0571fa6",
+        "sort-an-array.cpp": "58e2ac99be6e5198d63e3b55d52111f56af3d386",
+        "difficulty": "unknown"
+      }
     }
-
-    OUTPUT.write_text(
-        json.dumps(stats, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8"
-    )
-
-update_readme_stats(stats)
-
-    print(f"Stats generated: {OUTPUT}")
-    print(f"Unique problems tracked: {stats['leetcode']['solved']}")
-    print(
-        "Easy: {easy}, Medium: {medium}, Hard: {hard}, "
-        "Unknown: {unknown}".format(**counts)
-    )
-
-
-if __name__ == "__main__":
-    main()
+  }
+}
