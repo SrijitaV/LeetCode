@@ -3,8 +3,8 @@
     "easy": 50,
     "medium": 21,
     "hard": 1,
-    "unknown": 64,
-    "solved": 136,
+    "unknown": 58,
+    "solved": 130,
     "shas": {
       "README.md": {
         "": "9f04fc0fffdc64e609122a56ef1bbd6a06592825"
