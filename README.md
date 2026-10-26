@@ -435,6 +435,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0001-two-sum](https://github.com/SrijitaV/LeetCode/tree/main/0001-two-sum/) | Easy |
 | [0015-3sum](https://github.com/SrijitaV/LeetCode/tree/main/0015-3sum/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0033-search-in-rotated-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0049-group-anagrams](https://github.com/SrijitaV/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0066-plus-one](https://github.com/SrijitaV/LeetCode/tree/main/0066-plus-one/) | Easy |
@@ -546,6 +547,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/SrijitaV/LeetCode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
