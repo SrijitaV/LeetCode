@@ -20,18 +20,9 @@ The goal is not just to increase the number of solved problems, but to develop s
 
 ---
 
-## 📈 Live LeetCode Statistics
-
-[![LeetCode Stats](https://leetcode-stats.tashif.codes/SrijitaVerma/stats/svg?theme=light)](https://leetcode.com/u/SrijitaVerma/)
-
-[View my LeetCode Profile](https://leetcode.com/u/SrijitaVerma/)
-
----
-
 
 ## 🧭 Quick Navigation
 
-- [📈 Live LeetCode Statistics](#-live-leetcode-statistics)
 - [📊 DSA Progress Dashboard](#-dsa-progress-dashboard)
 - [🗺️ DSA Learning Roadmap](#-dsa-learning-roadmap)
 - [🧩 Problems by Topic](#-problems-by-topic)
