@@ -2,6 +2,8 @@ class Solution {
 public:
     vector<string> createGrid(int m, int n) {
 
+        // m = number of rows, n = number of columns.
+
         // The problem asks us to construct an m×n grid containing only the
         // characters . (free cell) and # (obstacle cell), such that there is
         // exactly one valid path from the top-left cell (0,0) to the
@@ -19,10 +21,17 @@ public:
         // is reached, moving right is out of bounds, forcing the path down the
         // last column.
 
+        // function strings ka ek vector return karega. Har string ek row
+        // represent karegi.
+        // Yahan hum grid naam ka vector bana rahe hain jisme m strings hongi.
         vector<string> grid(m);
+        // Agar m = 3, toh initially: grid[0] = "", grid[1] = "", grid[2] = ""
+        // grid[0] first row hai, grid[1] second row hai, aur grid[2] third row hai. 
+        // Abhi rows mein actual characters nahi bhare hain.
 
         // First row mein sabhi cells free rakhenge
         grid[0] = string(n, '.');
+        // string(n, '.') ~ iska matlab hai . character ko n baar repeat karke ek string banao.
 
         // Baaki rows mein last column free rakhenge
         string row = string(n - 1, '#') + '.';
@@ -33,10 +42,6 @@ public:
         }
 
         return grid;
-
-        // Complexity Analysis
-        // Let m and n be the number of rows and columns in the grid,
-        // respectively.
 
         // Time complexity: O(mn).
         // Constructing each cell in the grid takes O(1) time, so the overall
