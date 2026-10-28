@@ -474,6 +474,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0989-add-to-array-form-of-integer](https://github.com/SrijitaV/LeetCode/tree/main/0989-add-to-array-form-of-integer/) | Easy |
+| [2235-add-two-integers](https://github.com/SrijitaV/LeetCode/tree/main/2235-add-two-integers/) | Easy |
 | [2409-count-days-spent-together](https://github.com/SrijitaV/LeetCode/tree/main/2409-count-days-spent-together/) | Easy |
 | [2469-convert-the-temperature](https://github.com/SrijitaV/LeetCode/tree/main/2469-convert-the-temperature/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
