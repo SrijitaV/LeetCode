@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 52,
+    "easy": 53,
     "medium": 22,
     "hard": 1,
     "unknown": 58,
-    "solved": 133,
+    "solved": 134,
     "shas": {
       "README.md": {
-        "": "f97d63969991fffee9b366eb097472126476876d"
+        "": "fdac59f8e69e6f9abc0f6c3ad118cd963fb247a3"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -228,6 +228,11 @@
       "1317-convert-integer-to-the-sum-of-two-no-zero-integers": {
         "1317-convert-integer-to-the-sum-of-two-no-zero-integers.cpp": "964f46300c065b9d7015ccd0e6dd50777b50ed9e",
         "README.md": "d2483bd99a772bbe2ed1333880a05386e28fc234",
+        "difficulty": "easy"
+      },
+      "1323-maximum-69-number": {
+        "1323-maximum-69-number.cpp": "20147b1983ab71399b7cf053d3686d3da2284f21",
+        "README.md": "67d7d03350298dc54e5210ddc78c9f2dec7df708",
         "difficulty": "easy"
       },
       "136-single-number": {
