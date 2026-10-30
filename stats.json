@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 53,
+    "easy": 54,
     "medium": 22,
     "hard": 1,
     "unknown": 58,
-    "solved": 134,
+    "solved": 135,
     "shas": {
       "README.md": {
-        "": "fdac59f8e69e6f9abc0f6c3ad118cd963fb247a3"
+        "": "745595ba3bfbd8cf89e0d280dce15803273b38f0"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -219,6 +219,11 @@
         "README.md": "7145744604d5cfe533ff134db0e02ee1c23164d6",
         "defanging-an-ip-address.cpp": "df058b168c3e9bb714ce3824725dba598da32b54",
         "difficulty": "unknown"
+      },
+      "1281-subtract-the-product-and-sum-of-digits-of-an-integer": {
+        "1281-subtract-the-product-and-sum-of-digits-of-an-integer.cpp": "b942fb801214ef4689a51929fbc92d3504058af0",
+        "README.md": "24cc047d9d69e7b6b570b67b0ffa309102dc743c",
+        "difficulty": "easy"
       },
       "13-roman-to-integer": {
         "README.md": "7d388e86273ae9564db54c1ea663af537a22ccdb",
