@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 54,
+    "easy": 55,
     "medium": 22,
     "hard": 1,
     "unknown": 58,
-    "solved": 135,
+    "solved": 136,
     "shas": {
       "README.md": {
-        "": "745595ba3bfbd8cf89e0d280dce15803273b38f0"
+        "": "f91347bc25c77cf8c764c8e46afdbdaa659d5a26"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -238,6 +238,11 @@
       "1323-maximum-69-number": {
         "1323-maximum-69-number.cpp": "20147b1983ab71399b7cf053d3686d3da2284f21",
         "README.md": "67d7d03350298dc54e5210ddc78c9f2dec7df708",
+        "difficulty": "easy"
+      },
+      "1331-rank-transform-of-an-array": {
+        "1331-rank-transform-of-an-array.cpp": "ce1cc76620736f1611db4510592344458b043efe",
+        "README.md": "fa5fcfbd1595242d53c130ed9d1c7f07b118640a",
         "difficulty": "easy"
       },
       "136-single-number": {
