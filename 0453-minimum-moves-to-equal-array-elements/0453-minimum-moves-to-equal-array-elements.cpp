@@ -31,3 +31,25 @@ public:
         // Space Complexity ~ O(1)
     }
 };
+
+/*
+Incrementing n-1 elements is equivalent to decrementing the remaining element,
+when considering relative differences. The smallest element becomes our target
+value. Every element must conceptually be reduced to the minimum. Moves required
+for each element = nums[i] - min(nums). Sum all these differences.
+*/
+
+/*
+
+Think about what happens when you increment n - 1 elements. Instead of
+incrementing n - 1 elements, imagine doing the opposite: Decrement the remaining
+one element by 1.
+
+Why? Because incrementing all elements except one has the same effect on their
+relative differences as decrementing the one excluded element.
+
+So instead of making all elements equal by incrementing n-1 elements, we can
+imagine: Decrementing the largest elements until all elements become equal to
+the smallest element.
+
+*/
