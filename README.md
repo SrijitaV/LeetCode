@@ -434,6 +434,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/SrijitaV/LeetCode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/SrijitaV/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0500-keyboard-row](https://github.com/SrijitaV/LeetCode/tree/main/0500-keyboard-row/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/SrijitaV/LeetCode/tree/main/0643-maximum-average-subarray-i/) | Easy |
@@ -470,6 +471,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0342-power-of-four](https://github.com/SrijitaV/LeetCode/tree/main/0342-power-of-four/) | Easy |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/SrijitaV/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
