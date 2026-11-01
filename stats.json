@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 56,
-    "medium": 23,
+    "easy": 57,
+    "medium": 26,
     "hard": 1,
     "unknown": 58,
-    "solved": 138,
+    "solved": 142,
     "shas": {
       "README.md": {
-        "": "311d1e48c33d034871edf236f4114ad91b41e558"
+        "": "7adfa80f69959208744d3a7e62147fb8f727f76d"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -114,6 +114,11 @@
         "README.md": "b6967622342fb4e07e799c7d16246ad7f50e71fb",
         "difficulty": "easy"
       },
+      "0347-top-k-frequent-elements": {
+        "0347-top-k-frequent-elements.cpp": "35f24ee0d6f6408d6548212f3336769a8888ed52",
+        "README.md": "e437de22c6c3e84cac0f25308f6cc3a76c56e5c3",
+        "difficulty": "medium"
+      },
       "0350-intersection-of-two-arrays-ii": {
         "0350-intersection-of-two-arrays-ii.cpp": "b28431de076d457842729c1e3fa2c186c3fddd91",
         "README.md": "00a6c2813a9acd4a0c05531feef87ffe2d5301f6",
@@ -125,7 +130,7 @@
         "difficulty": "easy"
       },
       "0453-minimum-moves-to-equal-array-elements": {
-        "0453-minimum-moves-to-equal-array-elements.cpp": "31301eb77b7e3b165bec4f3a300a1e2e8dbe08d2",
+        "0453-minimum-moves-to-equal-array-elements.cpp": "362e684a741a81ffa278f56a91c6963d0e290599",
         "README.md": "facb9a1df672f227f692c9da5867cf8b03fb4483",
         "difficulty": "medium"
       },
@@ -647,6 +652,16 @@
         "README.md": "0107391dcf2d303de09e79c20e1ca83d9cbfabd3",
         "difficulty": "medium"
       },
+      "4074-maximum-product-pair-with-target-sum": {
+        "4074-maximum-product-pair-with-target-sum.cpp": "5d0234fc005dd7371a17c0e0f481f8865f8b235e",
+        "README.md": "0314810a8b9d29ea8fc68bd39ecd710e87079451",
+        "difficulty": "easy"
+      },
+      "4075-longest-resilient-subarray-i": {
+        "4075-longest-resilient-subarray-i.cpp": "e82bfd409f6d1277731cff67650ba5b285ac2fe3",
+        "README.md": "a62e336e450f42d3b5aa70d737b42882b635f69d",
+        "difficulty": "medium"
+      },
       "4084-last-visited-cell-in-a-directional-grid": {
         "4084-last-visited-cell-in-a-directional-grid.cpp": "f9922770db7d564b0d69423c135d58b27541d740",
         "README.md": "74b4a6da9e073805997dc72c09299cb6b2e2724e",
@@ -656,6 +671,11 @@
         "4097-minimum-value-of-merged-integers.cpp": "8ddb390bad53d6f30332a39b012cca7cf3468b0f",
         "README.md": "73e597865935a27b35959c4cc42f6c7eb6d2fd9f",
         "difficulty": "easy"
+      },
+      "4098-minimize-the-maximum-value-of-gcd-connected-array": {
+        "4098-minimize-the-maximum-value-of-gcd-connected-array.cpp": "78e3eb4b844e673a589c08ae8ed1916b41433564",
+        "README.md": "177cf0ed5da9946b9035c91e28aec91b73f049b3",
+        "difficulty": "medium"
       },
       "4107-find-missing-elements": {
         "README.md": "5d2a6da56acbef2625d3396fdc6d379632bc189e",
