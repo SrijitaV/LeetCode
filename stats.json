@@ -1,13 +1,13 @@
 {
   "leetcode": {
     "easy": 56,
-    "medium": 22,
+    "medium": 23,
     "hard": 1,
     "unknown": 58,
-    "solved": 137,
+    "solved": 138,
     "shas": {
       "README.md": {
-        "": "f91347bc25c77cf8c764c8e46afdbdaa659d5a26"
+        "": "311d1e48c33d034871edf236f4114ad91b41e558"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -123,6 +123,11 @@
         "0389-find-the-difference.cpp": "d5c341473b9c15b1edae7acf0f6280ac40276b98",
         "README.md": "8f9fd6ed85535e2a05a2db821115706656eef513",
         "difficulty": "easy"
+      },
+      "0453-minimum-moves-to-equal-array-elements": {
+        "0453-minimum-moves-to-equal-array-elements.cpp": "31301eb77b7e3b165bec4f3a300a1e2e8dbe08d2",
+        "README.md": "facb9a1df672f227f692c9da5867cf8b03fb4483",
+        "difficulty": "medium"
       },
       "0500-keyboard-row": {
         "0500-keyboard-row.cpp": "74196976f8eb760370123b762616a70b311b514a",
