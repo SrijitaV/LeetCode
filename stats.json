@@ -1,10 +1,10 @@
 {
   "leetcode": {
-    "easy": 55,
+    "easy": 56,
     "medium": 22,
     "hard": 1,
     "unknown": 58,
-    "solved": 136,
+    "solved": 137,
     "shas": {
       "README.md": {
         "": "f91347bc25c77cf8c764c8e46afdbdaa659d5a26"
@@ -241,7 +241,7 @@
         "difficulty": "easy"
       },
       "1331-rank-transform-of-an-array": {
-        "1331-rank-transform-of-an-array.cpp": "ce1cc76620736f1611db4510592344458b043efe",
+        "1331-rank-transform-of-an-array.cpp": "4ed04e5b8d4af67a0d6196410f877537482b5756",
         "README.md": "fa5fcfbd1595242d53c130ed9d1c7f07b118640a",
         "difficulty": "easy"
       },
@@ -646,6 +646,11 @@
         "4084-last-visited-cell-in-a-directional-grid.cpp": "f9922770db7d564b0d69423c135d58b27541d740",
         "README.md": "74b4a6da9e073805997dc72c09299cb6b2e2724e",
         "difficulty": "medium"
+      },
+      "4097-minimum-value-of-merged-integers": {
+        "4097-minimum-value-of-merged-integers.cpp": "8ddb390bad53d6f30332a39b012cca7cf3468b0f",
+        "README.md": "73e597865935a27b35959c4cc42f6c7eb6d2fd9f",
+        "difficulty": "easy"
       },
       "4107-find-missing-elements": {
         "README.md": "5d2a6da56acbef2625d3396fdc6d379632bc189e",
