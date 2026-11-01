@@ -8,29 +8,32 @@ public:
         // count frequency of each element
         unordered_map<int, int> freq;
 
-        for(int i = 0; i < nums.size(); i++) {
+        for (int i = 0; i < nums.size(); i++) {
             freq[nums[i]]++;
         }
 
         // store elements and their frequencies
         vector<pair<int, int>> arr;
 
-        for(auto it : freq) {
+        for (auto it : freq) {
             arr.push_back({it.first, it.second});
         }
 
         // sort according to frequency in descending order
-        sort(arr.begin(), arr.end(), [](auto &a, auto &b) {
-            return a.second > b.second;
-        });
+        sort(arr.begin(), arr.end(),
+             [](auto& a, auto& b) { return a.second > b.second; });
 
         // store the top k frequent elements
         vector<int> ans;
 
-        for(int i = 0; i < k; i++) {
+        for (int i = 0; i < k; i++) {
             ans.push_back(arr[i].first);
         }
 
         return ans;
+
+        // Here, m is the number of distinct elements, and m <= n.
+        // - Time Complexity: O(n + m log m), which is bounded by O(n log n).
+        // - Space Complexity: O(n), for the frequency map and pair vector.
     }
 };
