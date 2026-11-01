@@ -26,8 +26,24 @@ public:
         return accumulate(nums.begin(), nums.end(), 0ll) -
                (nums.size() * ranges::min(nums));
 
+        // Why 0ll instead of 0? ~ Because 0ll makes the accumulation happen
+        // using long long, preventing integer overflow while calculating the
+        // sum.
+
+        // accumulate() calculates the sum of all array elements (0ll ensures
+        // long long sum)
+
+        // ranges::min(nums) finds the minimum element
+
+        // nums.size() * min element = total value if every element were equal
+        // to the minimum
+
+        // ans = sum(nums) - (n * min(nums))
+
         // Time Complexity ~ O(n)
         // Space Complexity ~ O(1)
+
+        // ------------------------------------------------------------------------
 
         // Answer = sum(nums) - (n * min(nums))
 
