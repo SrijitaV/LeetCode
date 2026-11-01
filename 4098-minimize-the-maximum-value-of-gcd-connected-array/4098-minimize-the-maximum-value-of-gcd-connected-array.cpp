@@ -2,9 +2,13 @@ class Solution {
 public:
     long long minimumMaxValue(int n, int index, int value) {
 
+        // If value == 1, no valid array exists.
+        // Otherwise, let p be the smallest prime factor of value.
+        // Any predecessor of value is at most value - p,
+        // and any successor is at least value + p. Both expressions are even.
         if (value == 1) {
             return -1;
-        };
+        }
 
         // Find the smallest prime factor of value
         int p = value;
