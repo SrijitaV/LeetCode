@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 57,
+    "easy": 58,
     "medium": 28,
     "hard": 1,
     "unknown": 58,
-    "solved": 144,
+    "solved": 145,
     "shas": {
       "README.md": {
-        "": "bb96f2cc07a53ae79c964964dedb38650127010c"
+        "": "cab1d336a8ce528ae694cc5248906468bd121971"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -45,7 +45,7 @@
         "difficulty": "medium"
       },
       "0053-maximum-subarray": {
-        "0053-maximum-subarray.cpp": "d621c540de526bf923080efda3ea91c934e7e0ba",
+        "0053-maximum-subarray.cpp": "9edf14c0a3f7e141f8b9712fb7798e115769bdb5",
         "README.md": "da945e4a0d98e9a421824e3b51934f86ecc6d273",
         "difficulty": "medium"
       },
@@ -143,6 +143,11 @@
         "0462-minimum-moves-to-equal-array-elements-ii.cpp": "7c16390a888b81b29130fdad58e40fcad2f99d32",
         "README.md": "099c4df08c50b3f325c6ac455c3131895331e4b6",
         "difficulty": "medium"
+      },
+      "0485-max-consecutive-ones": {
+        "0485-max-consecutive-ones.cpp": "fccdddfc585111200fb58bcd6a1f465cc03516c2",
+        "README.md": "932bf1aa0d60b39b426f35622bdb328a5af8139a",
+        "difficulty": "easy"
       },
       "0500-keyboard-row": {
         "0500-keyboard-row.cpp": "74196976f8eb760370123b762616a70b311b514a",
