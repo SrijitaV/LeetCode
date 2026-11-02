@@ -438,6 +438,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/SrijitaV/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/SrijitaV/LeetCode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
+| [0485-max-consecutive-ones](https://github.com/SrijitaV/LeetCode/tree/main/0485-max-consecutive-ones/) | Easy |
 | [0500-keyboard-row](https://github.com/SrijitaV/LeetCode/tree/main/0500-keyboard-row/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/SrijitaV/LeetCode/tree/main/0643-maximum-average-subarray-i/) | Easy |
