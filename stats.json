@@ -1,10 +1,10 @@
 {
   "leetcode": {
-    "easy": 58,
+    "easy": 59,
     "medium": 28,
     "hard": 1,
     "unknown": 58,
-    "solved": 145,
+    "solved": 146,
     "shas": {
       "README.md": {
         "": "cab1d336a8ce528ae694cc5248906468bd121971"
@@ -172,6 +172,11 @@
       "0643-maximum-average-subarray-i": {
         "0643-maximum-average-subarray-i.cpp": "4c795b73b2231d9730b10cb134242152ed7b6426",
         "README.md": "d9a4dd6a786e675bdff5d36c826075c01b76d213",
+        "difficulty": "easy"
+      },
+      "0724-find-pivot-index": {
+        "0724-find-pivot-index.cpp": "951518517048fd51139b3cfc6000544218c99d43",
+        "README.md": "0372ddecf0848ff5a76126591d8aadd9d0490014",
         "difficulty": "easy"
       },
       "0836-rectangle-overlap": {
