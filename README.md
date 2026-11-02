@@ -442,6 +442,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0500-keyboard-row](https://github.com/SrijitaV/LeetCode/tree/main/0500-keyboard-row/) | Easy |
 | [0594-longest-harmonious-subsequence](https://github.com/SrijitaV/LeetCode/tree/main/0594-longest-harmonious-subsequence/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/SrijitaV/LeetCode/tree/main/0643-maximum-average-subarray-i/) | Easy |
+| [0724-find-pivot-index](https://github.com/SrijitaV/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0977-squares-of-a-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 | [0989-add-to-array-form-of-integer](https://github.com/SrijitaV/LeetCode/tree/main/0989-add-to-array-form-of-integer/) | Easy |
@@ -530,6 +531,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0724-find-pivot-index](https://github.com/SrijitaV/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
