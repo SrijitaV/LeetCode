@@ -1,13 +1,13 @@
 {
   "leetcode": {
     "easy": 57,
-    "medium": 27,
+    "medium": 28,
     "hard": 1,
     "unknown": 58,
-    "solved": 143,
+    "solved": 144,
     "shas": {
       "README.md": {
-        "": "8a0e556bc9b72dd640a0ec633b5fcd60c7cd541d"
+        "": "bb96f2cc07a53ae79c964964dedb38650127010c"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -42,6 +42,11 @@
       "0049-group-anagrams": {
         "0049-group-anagrams.cpp": "404b7f2187e9237a1c032366060e73b413e3d761",
         "README.md": "af55a793df5fdb5984dc3fab1618b6bbbc35e999",
+        "difficulty": "medium"
+      },
+      "0053-maximum-subarray": {
+        "0053-maximum-subarray.cpp": "d621c540de526bf923080efda3ea91c934e7e0ba",
+        "README.md": "da945e4a0d98e9a421824e3b51934f86ecc6d273",
         "difficulty": "medium"
       },
       "0058-length-of-last-word": {
@@ -135,7 +140,7 @@
         "difficulty": "medium"
       },
       "0462-minimum-moves-to-equal-array-elements-ii": {
-        "0462-minimum-moves-to-equal-array-elements-ii.cpp": "806f09185a3267f33aa478432ea534e226a90a59",
+        "0462-minimum-moves-to-equal-array-elements-ii.cpp": "7c16390a888b81b29130fdad58e40fcad2f99d32",
         "README.md": "099c4df08c50b3f325c6ac455c3131895331e4b6",
         "difficulty": "medium"
       },
