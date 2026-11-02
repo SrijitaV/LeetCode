@@ -21,6 +21,15 @@ public:
         }
 
         return -1;
-        
+
+        //         Time Complexity: O(n)
+        // - First loop calculates total_sum: O(n).
+        // - Second loop finds the pivot index: O(n).
+        // - Total: O(n) + O(n) = O(2n) = O(n).
+
+        // Space Complexity: O(1)
+        // - Only two extra variables, left_sum and right_sum, along with
+        // total_sum.
+        // - No additional data structures.
     }
 };
