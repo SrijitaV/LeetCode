@@ -18,7 +18,7 @@ public:
 
         return ans;
 
-        //         TC: O(n)
+        // TC: O(n)
         // - max_element() takes O(n).
         // - The for loop takes O(n).
 
