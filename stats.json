@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 59,
+    "easy": 61,
     "medium": 28,
     "hard": 1,
     "unknown": 58,
-    "solved": 146,
+    "solved": 148,
     "shas": {
       "README.md": {
-        "": "78ca7ce3761d076c68cf2961d39a2466e1e433d8"
+        "": "45404eff11bdd8243cfb7f45899fd8cc8f3b90bc"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -385,6 +385,11 @@
         "README.md": "970f842c4d4c698c46e920e7a4be86fe3c2ca2e9",
         "difficulty": "medium"
       },
+      "1991-find-the-middle-index-in-array": {
+        "1991-find-the-middle-index-in-array.cpp": "911cf7759dc85f0e0ace3d210e297211a8871837",
+        "README.md": "f11d6e5de48c156a3ec17a7bb150b3971b2f018a",
+        "difficulty": "easy"
+      },
       "2048-build-array-from-permutation": {
         "README.md": "f27eb3200f776f198c887eb060c8d519680d67ef",
         "build-array-from-permutation.cpp": "471d0cd47a21185ff85d04a6803de3c4b06a6c4d",
@@ -599,6 +604,11 @@
         "3727-maximum-alternating-sum-of-squares.cpp": "a825cdd0219d8639b5dcb67ba6e98102cbf7ed36",
         "README.md": "0007d42a3c1739663daee48e2bef673954bfdf73",
         "difficulty": "medium"
+      },
+      "3736-minimum-moves-to-equal-array-elements-iii": {
+        "3736-minimum-moves-to-equal-array-elements-iii.cpp": "98a2a326adfd966f3af0ae31e76ef352068876df",
+        "README.md": "cfbb5e2b328f1553350d06387a97419bfc497750",
+        "difficulty": "easy"
       },
       "383-ransom-note": {
         "README.md": "fcd8d1398042a0ed0b4b2cd5e0c0babdc673134c",
