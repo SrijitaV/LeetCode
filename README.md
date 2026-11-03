@@ -464,6 +464,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/SrijitaV/LeetCode/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/SrijitaV/LeetCode/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/SrijitaV/LeetCode/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/SrijitaV/LeetCode/tree/main/3904-smallest-stable-index-ii/) | Medium |
@@ -491,6 +492,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [2469-convert-the-temperature](https://github.com/SrijitaV/LeetCode/tree/main/2469-convert-the-temperature/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/SrijitaV/LeetCode/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/SrijitaV/LeetCode/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
 | [3870-count-commas-in-range](https://github.com/SrijitaV/LeetCode/tree/main/3870-count-commas-in-range/) | Easy |
 | [3871-count-commas-in-range-ii](https://github.com/SrijitaV/LeetCode/tree/main/3871-count-commas-in-range-ii/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/SrijitaV/LeetCode/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
