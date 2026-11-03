@@ -452,6 +452,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/SrijitaV/LeetCode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/SrijitaV/LeetCode/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
+| [2574-left-and-right-sum-differences](https://github.com/SrijitaV/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2778-sum-of-squares-of-special-elements](https://github.com/SrijitaV/LeetCode/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/SrijitaV/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SrijitaV/LeetCode/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
@@ -537,6 +538,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0724-find-pivot-index](https://github.com/SrijitaV/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/SrijitaV/LeetCode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
+| [2574-left-and-right-sum-differences](https://github.com/SrijitaV/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/SrijitaV/LeetCode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/SrijitaV/LeetCode/tree/main/3904-smallest-stable-index-ii/) | Medium |
