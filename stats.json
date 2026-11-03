@@ -1,13 +1,13 @@
 {
   "leetcode": {
     "easy": 62,
-    "medium": 28,
+    "medium": 29,
     "hard": 1,
     "unknown": 58,
-    "solved": 149,
+    "solved": 150,
     "shas": {
       "README.md": {
-        "": "81bf0100fc5d9e81165db77f8be3fa6b3d3cd044"
+        "": "4153c7cdc127276c5d76ef341e622d83ef05c67a"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -87,6 +87,11 @@
       "0167-two-sum-ii-input-array-is-sorted": {
         "0167-two-sum-ii-input-array-is-sorted.cpp": "f632771c6b92bc5bafd13c9b0f6b6503357ae113",
         "README.md": "92cd00fe35cc6b0855cfb5620b84969eae0a33e3",
+        "difficulty": "medium"
+      },
+      "0204-count-primes": {
+        "0204-count-primes.cpp": "54748b0673c7fa24d33bab4f6418fdcb70953d7e",
+        "README.md": "a6f9e099a36228ef7327ec98e466452008928e29",
         "difficulty": "medium"
       },
       "0223-rectangle-area": {
@@ -466,7 +471,7 @@
         "difficulty": "unknown"
       },
       "2574-left-and-right-sum-differences": {
-        "2574-left-and-right-sum-differences.cpp": "0f69e52d27a641bee8745730f9e7b174bc5d93c5",
+        "2574-left-and-right-sum-differences.cpp": "3f455e67873e89077d2abac59fbfc223b7cd0edc",
         "README.md": "a71b6a5433f3a09bd522abaf4f4d50dbd662ef79",
         "difficulty": "easy"
       },
