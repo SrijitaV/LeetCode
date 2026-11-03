@@ -433,6 +433,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0066-plus-one](https://github.com/SrijitaV/LeetCode/tree/main/0066-plus-one/) | Easy |
 | [0088-merge-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0088-merge-sorted-array/) | Easy |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/SrijitaV/LeetCode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
+| [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/SrijitaV/LeetCode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
@@ -475,6 +476,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0066-plus-one](https://github.com/SrijitaV/LeetCode/tree/main/0066-plus-one/) | Easy |
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
+| [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
 | [0223-rectangle-area](https://github.com/SrijitaV/LeetCode/tree/main/0223-rectangle-area/) | Medium |
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
@@ -594,6 +596,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
 | [2778-sum-of-squares-of-special-elements](https://github.com/SrijitaV/LeetCode/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Sorting
@@ -708,4 +711,20 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/SrijitaV/LeetCode/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Number Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
+## Primality Test
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
+## Sieve Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
+## Prime Number Sieve
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
 <!---LeetCode Topics End-->
