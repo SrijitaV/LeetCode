@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 62,
+    "easy": 63,
     "medium": 29,
     "hard": 1,
     "unknown": 58,
-    "solved": 150,
+    "solved": 151,
     "shas": {
       "README.md": {
-        "": "4153c7cdc127276c5d76ef341e622d83ef05c67a"
+        "": "297995c50fbafa226dfd5b4e480e5d58193c3fbe"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -90,7 +90,7 @@
         "difficulty": "medium"
       },
       "0204-count-primes": {
-        "0204-count-primes.cpp": "54748b0673c7fa24d33bab4f6418fdcb70953d7e",
+        "0204-count-primes.cpp": "754330177ffd37a9a2448d34b18c09fbe1de337b",
         "README.md": "a6f9e099a36228ef7327ec98e466452008928e29",
         "difficulty": "medium"
       },
@@ -177,6 +177,11 @@
       "0643-maximum-average-subarray-i": {
         "0643-maximum-average-subarray-i.cpp": "4c795b73b2231d9730b10cb134242152ed7b6426",
         "README.md": "d9a4dd6a786e675bdff5d36c826075c01b76d213",
+        "difficulty": "easy"
+      },
+      "0657-robot-return-to-origin": {
+        "0657-robot-return-to-origin.cpp": "1a6588bc15e4f5e955094265404d312910cd0619",
+        "README.md": "53cfadbea561161db5812bf382b6b203a0a16b38",
         "difficulty": "easy"
       },
       "0724-find-pivot-index": {
