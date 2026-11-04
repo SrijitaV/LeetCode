@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 64,
+    "easy": 65,
     "medium": 29,
     "hard": 1,
     "unknown": 57,
-    "solved": 151,
+    "solved": 152,
     "shas": {
       "README.md": {
-        "": "b10e87add3520193503c1e4ba2a1a808c0eb8995"
+        "": "f55438a2bd24df11dc178469e6ee2db43e3c067a"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -253,6 +253,11 @@
         "README.md": "d3a9dca28a4f5f8ac558cba8c4bb4ea462a080d4",
         "container-with-most-water.cpp": "5a7b72e833e7996036a34abf04b456a8c2e9cd3f",
         "difficulty": "unknown"
+      },
+      "1108-defanging-an-ip-address": {
+        "1108-defanging-an-ip-address.cpp": "d03483aa7dff84babab79dad685fd35749a2c1f4",
+        "README.md": "5f92cb05f0e66b82cbf77cfcc680c62f03092e46",
+        "difficulty": "easy"
       },
       "118-pascals-triangle": {
         "Notes.md": "07dce88c9e1fc6ad5cadc54d307cacc090d09313",
