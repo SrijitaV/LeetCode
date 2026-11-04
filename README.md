@@ -478,6 +478,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
 | [0223-rectangle-area](https://github.com/SrijitaV/LeetCode/tree/main/0223-rectangle-area/) | Medium |
+| [0258-add-digits](https://github.com/SrijitaV/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0342-power-of-four](https://github.com/SrijitaV/LeetCode/tree/main/0342-power-of-four/) | Easy |
@@ -648,6 +649,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
+| [0258-add-digits](https://github.com/SrijitaV/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [0657-robot-return-to-origin](https://github.com/SrijitaV/LeetCode/tree/main/0657-robot-return-to-origin/) | Easy |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
@@ -717,6 +719,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
+| [0258-add-digits](https://github.com/SrijitaV/LeetCode/tree/main/0258-add-digits/) | Easy |
 ## Primality Test
 | Problem Name | Difficulty |
 | ------- | ------- |
