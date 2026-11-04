@@ -532,6 +532,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0657-robot-return-to-origin](https://github.com/SrijitaV/LeetCode/tree/main/0657-robot-return-to-origin/) | Easy |
 | [0856-score-of-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/SrijitaV/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
+| [1108-defanging-an-ip-address](https://github.com/SrijitaV/LeetCode/tree/main/1108-defanging-an-ip-address/) | Easy |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [2409-count-days-spent-together](https://github.com/SrijitaV/LeetCode/tree/main/2409-count-days-spent-together/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
