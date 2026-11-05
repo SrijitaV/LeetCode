@@ -450,6 +450,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/SrijitaV/LeetCode/tree/main/1013-partition-array-into-three-parts-with-equal-sum/) | Easy |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/SrijitaV/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/SrijitaV/LeetCode/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/SrijitaV/LeetCode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/SrijitaV/LeetCode/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
@@ -559,6 +560,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0977-squares-of-a-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/SrijitaV/LeetCode/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/SrijitaV/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -569,6 +571,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SrijitaV/LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [0633-sum-of-square-numbers](https://github.com/SrijitaV/LeetCode/tree/main/0633-sum-of-square-numbers/) | Medium |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/SrijitaV/LeetCode/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [2089-find-target-indices-after-sorting-array](https://github.com/SrijitaV/LeetCode/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/SrijitaV/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
@@ -617,6 +620,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0977-squares-of-a-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/SrijitaV/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/SrijitaV/LeetCode/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/SrijitaV/LeetCode/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/SrijitaV/LeetCode/tree/main/2824-count-pairs-whose-sum-is-less-than-target/) | Easy |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/SrijitaV/LeetCode/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
