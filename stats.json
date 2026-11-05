@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 65,
+    "easy": 66,
     "medium": 29,
     "hard": 1,
     "unknown": 57,
-    "solved": 152,
+    "solved": 153,
     "shas": {
       "README.md": {
-        "": "f55438a2bd24df11dc178469e6ee2db43e3c067a"
+        "": "d81efa347f7ea624347f9a370ed3dae17e391507"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -304,6 +304,11 @@
         "README.md": "84bb704adee859573b83f3900d7ebb538b82ea95",
         "single-number-ii.cpp": "98b330d5eeb24e118b76d6e8bf1769d1ef399dd6",
         "difficulty": "unknown"
+      },
+      "1385-find-the-distance-value-between-two-arrays": {
+        "1385-find-the-distance-value-between-two-arrays.cpp": "4184db9b352c83d1e7b2c4e97db07aad6ea46ee1",
+        "README.md": "93d4d7e66622e736a8969db1ec31dd9b08b6b634",
+        "difficulty": "easy"
       },
       "14-longest-common-prefix": {
         "README.md": "9515840b4700a13546f123f3a5ba65985362e974",
