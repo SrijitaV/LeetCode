@@ -451,6 +451,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [1051-height-checker](https://github.com/SrijitaV/LeetCode/tree/main/1051-height-checker/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/SrijitaV/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/SrijitaV/LeetCode/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
+| [1389-create-target-array-in-the-given-order](https://github.com/SrijitaV/LeetCode/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/SrijitaV/LeetCode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/SrijitaV/LeetCode/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
@@ -656,6 +657,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0258-add-digits](https://github.com/SrijitaV/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [0657-robot-return-to-origin](https://github.com/SrijitaV/LeetCode/tree/main/0657-robot-return-to-origin/) | Easy |
+| [1389-create-target-array-in-the-given-order](https://github.com/SrijitaV/LeetCode/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Matrix
