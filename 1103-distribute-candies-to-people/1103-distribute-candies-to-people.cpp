@@ -40,6 +40,9 @@ public:
         // returning the final distribution
         return ans;
 
+        // Time Complexity ~ O(sqrt{candies})
+        // Space Complexity ~ (O(num_people)
+
         // ------------------------------------------------------------------
 
         // // -------------------- my brute force approach -------------------
