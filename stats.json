@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 67,
+    "easy": 68,
     "medium": 29,
     "hard": 1,
     "unknown": 57,
-    "solved": 154,
+    "solved": 155,
     "shas": {
       "README.md": {
-        "": "dc7599edc3d5b3bb6ac409356a6ab14597d709db"
+        "": "5dcf5514161cb77959ad7b185d0bab20ceaf6615"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -253,6 +253,11 @@
         "README.md": "d3a9dca28a4f5f8ac558cba8c4bb4ea462a080d4",
         "container-with-most-water.cpp": "5a7b72e833e7996036a34abf04b456a8c2e9cd3f",
         "difficulty": "unknown"
+      },
+      "1103-distribute-candies-to-people": {
+        "1103-distribute-candies-to-people.cpp": "811e20866bc008f8c0a7c12168f01b6d7721a206",
+        "README.md": "60b3e677202274367aba3701646b766f90e5b4f5",
+        "difficulty": "easy"
       },
       "1108-defanging-an-ip-address": {
         "1108-defanging-an-ip-address.cpp": "d03483aa7dff84babab79dad685fd35749a2c1f4",
