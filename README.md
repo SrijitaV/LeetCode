@@ -491,6 +491,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0836-rectangle-overlap](https://github.com/SrijitaV/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/SrijitaV/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0989-add-to-array-form-of-integer](https://github.com/SrijitaV/LeetCode/tree/main/0989-add-to-array-form-of-integer/) | Easy |
+| [1103-distribute-candies-to-people](https://github.com/SrijitaV/LeetCode/tree/main/1103-distribute-candies-to-people/) | Easy |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/SrijitaV/LeetCode/tree/main/1281-subtract-the-product-and-sum-of-digits-of-an-integer/) | Easy |
 | [1323-maximum-69-number](https://github.com/SrijitaV/LeetCode/tree/main/1323-maximum-69-number/) | Easy |
 | [2235-add-two-integers](https://github.com/SrijitaV/LeetCode/tree/main/2235-add-two-integers/) | Easy |
@@ -657,6 +658,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0258-add-digits](https://github.com/SrijitaV/LeetCode/tree/main/0258-add-digits/) | Easy |
 | [0657-robot-return-to-origin](https://github.com/SrijitaV/LeetCode/tree/main/0657-robot-return-to-origin/) | Easy |
+| [1103-distribute-candies-to-people](https://github.com/SrijitaV/LeetCode/tree/main/1103-distribute-candies-to-people/) | Easy |
 | [1389-create-target-array-in-the-given-order](https://github.com/SrijitaV/LeetCode/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
