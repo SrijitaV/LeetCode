@@ -34,5 +34,7 @@ public:
         }
 
         return total;
+
+        // TC = O(1), SC = O(1)
     }
 };
