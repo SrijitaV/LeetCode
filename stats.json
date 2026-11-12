@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 70,
+    "easy": 71,
     "medium": 30,
     "hard": 1,
     "unknown": 57,
-    "solved": 158,
+    "solved": 159,
     "shas": {
       "README.md": {
-        "": "8c3f1c5add32d93d0652919a1563c1eac73f865d"
+        "": "5382eb57f575127504fbe7a0d626d52fb50e318c"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -585,6 +585,11 @@
         "README.md": "28e2de9edc4c1604facee28f3c9eff4b0005940d",
         "difficulty": "easy"
       },
+      "3105-longest-strictly-increasing-or-strictly-decreasing-subarray": {
+        "3105-longest-strictly-increasing-or-strictly-decreasing-subarray.cpp": "1e7489a6f584169fafd8205950abdf3f6de435ac",
+        "README.md": "6ad46a7ebacc4787b7a44f454b9383e662d5033f",
+        "difficulty": "easy"
+      },
       "344-reverse-string": {
         "README.md": "2ecd6e2242a3b4706ae3c653c0977222885ffaf7",
         "reverse-string.cpp": "4ae2357109b34a46b3bad6dc7898339a6946dfb2",
@@ -661,7 +666,7 @@
         "difficulty": "easy"
       },
       "3789-minimum-cost-to-acquire-required-items": {
-        "3789-minimum-cost-to-acquire-required-items.cpp": "13426758f8ffb7dc214eff1c6ba0dea48a5a1f84",
+        "3789-minimum-cost-to-acquire-required-items.cpp": "40b87238b257716301b39b7577c453b9f6dac8b5",
         "README.md": "114bcad08a145dfade9e37c9709dbba539e6de13",
         "difficulty": "medium"
       },
