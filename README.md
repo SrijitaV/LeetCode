@@ -464,6 +464,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3033-modify-the-matrix](https://github.com/SrijitaV/LeetCode/tree/main/3033-modify-the-matrix/) | Easy |
 | [3046-split-the-array](https://github.com/SrijitaV/LeetCode/tree/main/3046-split-the-array/) | Easy |
+| [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/SrijitaV/LeetCode/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/SrijitaV/LeetCode/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/SrijitaV/LeetCode/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
