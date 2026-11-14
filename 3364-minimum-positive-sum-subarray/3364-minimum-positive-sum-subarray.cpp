@@ -81,11 +81,12 @@ public:
         //             sum += nums[j];
         //         }
 
-        //         // A subarray is considered valid only if its sum is positive.
-        //         if (sum > 0) {
+        //         // A subarray is considered valid only if its sum is
+        //         positive. if (sum > 0) {
 
         //             // If this is the first positive sum found,
-        //             // OR the current sum is smaller than the previous answer,
+        //             // OR the current sum is smaller than the previous
+        //             answer,
         //             // update the minimum sum.
         //             if (ans == -1 || sum < ans) {
         //                 ans = sum;
