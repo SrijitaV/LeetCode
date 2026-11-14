@@ -1,28 +1,41 @@
+
 class Solution {
 public:
     int minimumSumSubarray(vector<int>& nums, int l, int r) {
 
-        // ye final answer
+        // Stores the minimum positive subarray sum found so far.
+        // Initially -1 means that no valid positive sum has been found.
         int ans = -1;
 
-        // given array ka size aage use karne k liye
+        // Stores the total number of elements in the given array.
         int n = nums.size();
 
-        // sabhi size ka window ko check karne k liye
+        // Outer loop: Checks every possible window size
+        // starting from l and going up to r (both inclusive).
         for (int size = l; size <= r; size++) {
 
-            // given array ko iterate kar k minimum sum find out kar rahe hai
+            // Middle loop: Iterates through all possible starting
+            // indices for the current window size.
+            // n - size is the last valid starting index,
+            // so that the window does not go out of array bounds.
             for (int i = 0; i <= n - size; i++) {
 
-                // temporary sum find karne k liye
+                // Stores the sum of the current subarray.
+                // Reset to 0 for every new starting index.
                 int sum = 0;
 
-                // considered window ka sum find kar k liye
+                // Inner loop: Calculates the sum of the current window.
+                // Starts from index i and goes up to i + size - 1.
                 for (int j = i; j < i + size; j++) {
-                    sum = sum + nums[j];
+                    sum += nums[j];
                 }
 
+                // A subarray is considered valid only if its sum is positive.
                 if (sum > 0) {
+
+                    // If this is the first positive sum found,
+                    // OR the current sum is smaller than the previous answer,
+                    // update the minimum sum.
                     if (ans == -1 || sum < ans) {
                         ans = sum;
                     }
@@ -30,7 +43,21 @@ public:
             }
         }
 
-        // result return kar re
+        // Returns the minimum positive sum.
+        // Returns -1 if no valid positive-sum subarray exists.
         return ans;
+
+        // Time Complexity: O(n^3)
+        // - We have 3 nested loops:
+        //     1. Outer loop (size): Maximum O(n)
+        //     2. Middle loop (i): Maximum O(n)
+        //     3. Inner loop (j): Maximum O(n)
+        // -Therefore : O(n * n *s n) = O(n^3)
+
+        // Space Complexity: O(1)
+        // - We are using only a few variables:
+        // - ans, n, size, i, j, sum
+        // - No extra array, vector, or data structure is created.
+        // - Therefore : O(1)
     }
 };
