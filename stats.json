@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 72,
+    "easy": 73,
     "medium": 30,
     "hard": 1,
     "unknown": 57,
-    "solved": 160,
+    "solved": 161,
     "shas": {
       "README.md": {
-        "": "61ee9a4b5bb62f07cc1bba4ff3746842218be25a"
+        "": "29fb836fbffc5a3a6e1b668b04b0c91860c648fc"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -465,6 +465,11 @@
         "README.md": "ff39e94e19796590962273f61444b11b2df96c54",
         "difficulty": "easy"
       },
+      "2243-calculate-digit-sum-of-a-string": {
+        "2243-calculate-digit-sum-of-a-string.cpp": "b51abde76e88beb16de8a06345c0152cfeaa9dec",
+        "README.md": "3cea2e6a3cb23a8d829073eedcd438a17ebc271b",
+        "difficulty": "easy"
+      },
       "229-majority-element-ii": {
         "README.md": "6a7fb39ed2e41d4f44fae02f72007260c5733351",
         "majority-element-ii.cpp": "45fc213d7c4fac85541c28afb5040607f2355c26",
@@ -591,7 +596,7 @@
         "difficulty": "easy"
       },
       "3364-minimum-positive-sum-subarray": {
-        "3364-minimum-positive-sum-subarray.cpp": "267dcf2d8f2851fc8139fe15b7eecd3f9d140f42",
+        "3364-minimum-positive-sum-subarray.cpp": "344dda955b9504af163c4f58023864d032f8f8f1",
         "README.md": "243d66474f3a41f99b36c40368e4f8d0e35f7573",
         "difficulty": "easy"
       },
