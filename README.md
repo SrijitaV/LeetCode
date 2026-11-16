@@ -543,6 +543,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/SrijitaV/LeetCode/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1108-defanging-an-ip-address](https://github.com/SrijitaV/LeetCode/tree/main/1108-defanging-an-ip-address/) | Easy |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2409-count-days-spent-together](https://github.com/SrijitaV/LeetCode/tree/main/2409-count-days-spent-together/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3863-minimum-operations-to-sort-a-string/) | Medium |
@@ -668,6 +669,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0657-robot-return-to-origin](https://github.com/SrijitaV/LeetCode/tree/main/0657-robot-return-to-origin/) | Easy |
 | [1103-distribute-candies-to-people](https://github.com/SrijitaV/LeetCode/tree/main/1103-distribute-candies-to-people/) | Easy |
 | [1389-create-target-array-in-the-given-order](https://github.com/SrijitaV/LeetCode/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Matrix
