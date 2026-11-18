@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 73,
-    "medium": 30,
+    "easy": 74,
+    "medium": 31,
     "hard": 1,
     "unknown": 57,
-    "solved": 161,
+    "solved": 163,
     "shas": {
       "README.md": {
-        "": "29fb836fbffc5a3a6e1b668b04b0c91860c648fc"
+        "": "7fb63f53b5c9e631f5d7882b0575f14a366e52b6"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -555,6 +555,11 @@
         "find-the-duplicate-number.cpp": "100720f1850fea58212ea8943de4d9747650d59d",
         "difficulty": "unknown"
       },
+      "2879-display-the-first-three-rows": {
+        "2879-display-the-first-three-rows.py": "9458958c65e72a06cb95a8ac6c0fe1d3191d73d5",
+        "README.md": "60868115ad8dea19ebe105b94fa191205351605e",
+        "difficulty": "easy"
+      },
       "2897-apply-operations-on-array-to-maximize-sum-of-squares": {
         "2897-apply-operations-on-array-to-maximize-sum-of-squares.cpp": "300dc0523441e8b530103660cf75d5506dce9e36",
         "README.md": "dac128d94373014b43e028c65485ba7045679aa9",
@@ -564,6 +569,11 @@
         "2913-subarrays-distinct-element-sum-of-squares-i.cpp": "b2dcb2fed3a7868b3ff636039a2ebc67fd1a8550",
         "README.md": "441c0801c753075a81d821a714ae9cbb1838a731",
         "difficulty": "easy"
+      },
+      "2914-minimum-number-of-changes-to-make-binary-string-beautiful": {
+        "2914-minimum-number-of-changes-to-make-binary-string-beautiful.cpp": "ebcecf45420933ad5ccf2ad0d9cde64746fc7497",
+        "README.md": "db2b39805e6660fc22dd64433bf565c87787eaee",
+        "difficulty": "medium"
       },
       "2917-count-pairs-whose-sum-is-less-than-target": {
         "README.md": "e08066e14f1edbbb8d0a92d95991286a8c2523df",
