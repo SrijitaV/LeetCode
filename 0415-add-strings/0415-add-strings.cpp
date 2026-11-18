@@ -37,5 +37,14 @@ public:
         reverse(ans.begin(), ans.end());
 
         return ans;
+
+        // Time Complexity: 
+        // O(max(n,m))
+        // where n and m are the lengths of the two strings. 
+        // We traverse both strings once.
+
+        // Space Complexity: 
+        // O(max(n,m)) 
+        // for storing the resulting string.
     }
 };
