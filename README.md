@@ -545,6 +545,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2409-count-days-spent-together](https://github.com/SrijitaV/LeetCode/tree/main/2409-count-days-spent-together/) | Easy |
+| [2914-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/SrijitaV/LeetCode/tree/main/2914-minimum-number-of-changes-to-make-binary-string-beautiful/) | Medium |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3863-minimum-operations-to-sort-a-string/) | Medium |
 ## Prefix Sum
