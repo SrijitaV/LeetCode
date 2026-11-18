@@ -27,7 +27,7 @@ public:
             }
 
             // Store the current digit
-            ans += (sum % 10) + '0';
+            ans += ((sum % 10) + '0');
 
             // Update carry
             carry = sum / 10;
@@ -38,13 +38,13 @@ public:
 
         return ans;
 
-        // Time Complexity: 
+        // Time Complexity:
         // O(max(n,m))
-        // where n and m are the lengths of the two strings. 
+        // where n and m are the lengths of the two strings.
         // We traverse both strings once.
 
-        // Space Complexity: 
-        // O(max(n,m)) 
+        // Space Complexity:
+        // O(max(n,m))
         // for storing the resulting string.
     }
 };
