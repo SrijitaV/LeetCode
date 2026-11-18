@@ -3,57 +3,72 @@ class Solution {
 public:
     int minChanges(string s) {
 
+        // -------------------- optimized approach --------------------
+
+        int minChangesRequired = 0;
+
+        // Check pairs of characters (i, i+1) with step size 2
+        for (int i = 0; i < s.length(); i += 2) {
+            // If characters in current pair don't match,
+            // we need one change to make them equal
+            if (s[i] != s[i + 1]) {
+                minChangesRequired++;
+            }
+        }
+
+        return minChangesRequired;
+
         // --------------------------------------------------------------
 
         // ------------------ my brute force approach ------------------
 
-        // Intuition
+        // // Intuition
 
-        // - According to Hint 1, every valid substring of even length
-        // can be further divided into substrings of length exactly 2.
-        // - Therefore, we can divide the entire string into
-        // disjoint pairs of size 2.
-        // - For each pair:
-        //   - If both characters are the same (00 or 11),
-        // no changes are required.
-        //   - If both characters are different (01 or 10),
-        // we need to change exactly one character.
-        // - We traverse every pair and increment ans
-        // whenever the two characters are different.
-        // - Finally, return the total number of changes.
+        // // - According to Hint 1, every valid substring of even length
+        // // can be further divided into substrings of length exactly 2.
+        // // - Therefore, we can divide the entire string into
+        // // disjoint pairs of size 2.
+        // // - For each pair:
+        // //   - If both characters are the same (00 or 11),
+        // // no changes are required.
+        // //   - If both characters are different (01 or 10),
+        // // we need to change exactly one character.
+        // // - We traverse every pair and increment ans
+        // // whenever the two characters are different.
+        // // - Finally, return the total number of changes.
 
-        // final result
-        int ans = 0;
+        // // final result
+        // int ans = 0;
 
-        // i and j represent a pair of adjacent characters
-        int i = 0, j = 1;
+        // // i and j represent a pair of adjacent characters
+        // int i = 0, j = 1;
 
-        // Traverse the string by considering pairs of size 2
-        while (j < s.length()) {
+        // // Traverse the string by considering pairs of size 2
+        // while (j < s.length()) {
 
-            // If both characters are different,
-            // we need to change one of them to make the pair beautiful
-            if (s[i] != s[j]) {
-                ans++;
-            }
+        //     // If both characters are different,
+        //     // we need to change one of them to make the pair beautiful
+        //     if (s[i] != s[j]) {
+        //         ans++;
+        //     }
 
-            // Move to the next pair
-            i += 2;
-            j += 2;
-        }
+        //     // Move to the next pair
+        //     i += 2;
+        //     j += 2;
+        // }
 
-        // Return the minimum number of changes required
-        return ans;
+        // // Return the minimum number of changes required
+        // return ans;
 
-        // Complexity Analysis
+        // // Complexity Analysis
 
-        // - Time Complexity: O(n)
-        // We traverse the string once, processing two characters in every iteration. 
-        // Hence, O(n/2) = O(n).
+        // // - Time Complexity: O(n)
+        // // We traverse the string once, processing two characters in every iteration. 
+        // // Hence, O(n/2) = O(n).
 
-        // - Space Complexity: O(1)
-        // We use only a constant number of variables (ans, i, and j), 
-        // irrespective of the input size.
-        
+        // // - Space Complexity: O(1)
+        // // We use only a constant number of variables (ans, i, and j), 
+        // // irrespective of the input size.
+
     }
 };
