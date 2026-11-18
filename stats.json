@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 74,
+    "easy": 75,
     "medium": 31,
     "hard": 1,
     "unknown": 57,
-    "solved": 163,
+    "solved": 164,
     "shas": {
       "README.md": {
-        "": "7fb63f53b5c9e631f5d7882b0575f14a366e52b6"
+        "": "0e46bad1df8cd661d97003d58bbfb55d16f35bc2"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -152,6 +152,11 @@
       "0389-find-the-difference": {
         "0389-find-the-difference.cpp": "d5c341473b9c15b1edae7acf0f6280ac40276b98",
         "README.md": "8f9fd6ed85535e2a05a2db821115706656eef513",
+        "difficulty": "easy"
+      },
+      "0415-add-strings": {
+        "0415-add-strings.cpp": "2fe8f60dcd10b6c172d280d9b627dcdbb8b33458",
+        "README.md": "ae24fa23cf8dbc948fdc7df9e0e9387b5f463102",
         "difficulty": "easy"
       },
       "0453-minimum-moves-to-equal-array-elements": {
@@ -571,7 +576,7 @@
         "difficulty": "easy"
       },
       "2914-minimum-number-of-changes-to-make-binary-string-beautiful": {
-        "2914-minimum-number-of-changes-to-make-binary-string-beautiful.cpp": "ebcecf45420933ad5ccf2ad0d9cde64746fc7497",
+        "2914-minimum-number-of-changes-to-make-binary-string-beautiful.cpp": "0e1027503c5747fc2cc1478226c691d5795c0746",
         "README.md": "db2b39805e6660fc22dd64433bf565c87787eaee",
         "difficulty": "medium"
       },
