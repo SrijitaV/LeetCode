@@ -488,6 +488,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0263-ugly-number](https://github.com/SrijitaV/LeetCode/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/SrijitaV/LeetCode/tree/main/0268-missing-number/) | Easy |
 | [0342-power-of-four](https://github.com/SrijitaV/LeetCode/tree/main/0342-power-of-four/) | Easy |
+| [0415-add-strings](https://github.com/SrijitaV/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/SrijitaV/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/SrijitaV/LeetCode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0509-fibonacci-number](https://github.com/SrijitaV/LeetCode/tree/main/0509-fibonacci-number/) | Easy |
@@ -537,6 +538,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0125-valid-palindrome](https://github.com/SrijitaV/LeetCode/tree/main/0125-valid-palindrome/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [0389-find-the-difference](https://github.com/SrijitaV/LeetCode/tree/main/0389-find-the-difference/) | Easy |
+| [0415-add-strings](https://github.com/SrijitaV/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [0500-keyboard-row](https://github.com/SrijitaV/LeetCode/tree/main/0500-keyboard-row/) | Easy |
 | [0657-robot-return-to-origin](https://github.com/SrijitaV/LeetCode/tree/main/0657-robot-return-to-origin/) | Easy |
 | [0856-score-of-parentheses](https://github.com/SrijitaV/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
@@ -667,6 +669,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | ------- | ------- |
 | [0067-add-binary](https://github.com/SrijitaV/LeetCode/tree/main/0067-add-binary/) | Easy |
 | [0258-add-digits](https://github.com/SrijitaV/LeetCode/tree/main/0258-add-digits/) | Easy |
+| [0415-add-strings](https://github.com/SrijitaV/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [0657-robot-return-to-origin](https://github.com/SrijitaV/LeetCode/tree/main/0657-robot-return-to-origin/) | Easy |
 | [1103-distribute-candies-to-people](https://github.com/SrijitaV/LeetCode/tree/main/1103-distribute-candies-to-people/) | Easy |
 | [1389-create-target-array-in-the-given-order](https://github.com/SrijitaV/LeetCode/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
