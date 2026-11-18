@@ -8,6 +8,7 @@ public:
         // ------------------ my brute force approach ------------------
 
         // Intuition
+
         // - According to Hint 1, every valid substring of even length
         // can be further divided into substrings of length exactly 2.
         // - Therefore, we can divide the entire string into
@@ -43,6 +44,16 @@ public:
 
         // Return the minimum number of changes required
         return ans;
+
+        // Complexity Analysis
+
+        // - Time Complexity: O(n)
+        // We traverse the string once, processing two characters in every iteration. 
+        // Hence, O(n/2) = O(n).
+
+        // - Space Complexity: O(1)
+        // We use only a constant number of variables (ans, i, and j), 
+        // irrespective of the input size.
         
     }
 };
