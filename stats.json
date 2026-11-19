@@ -1,13 +1,13 @@
 {
   "leetcode": {
     "easy": 75,
-    "medium": 31,
+    "medium": 32,
     "hard": 1,
     "unknown": 57,
-    "solved": 164,
+    "solved": 165,
     "shas": {
       "README.md": {
-        "": "0e46bad1df8cd661d97003d58bbfb55d16f35bc2"
+        "": "e499dbef8935cb3f41fe87cfbff2c05755b670d8"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -155,7 +155,7 @@
         "difficulty": "easy"
       },
       "0415-add-strings": {
-        "0415-add-strings.cpp": "2fe8f60dcd10b6c172d280d9b627dcdbb8b33458",
+        "0415-add-strings.cpp": "08b37420963a108ff7e7d67de762adff98e5428c",
         "README.md": "ae24fa23cf8dbc948fdc7df9e0e9387b5f463102",
         "difficulty": "easy"
       },
@@ -519,6 +519,11 @@
         "README.md": "9204e5e18a1cffe408e5d050988086dab05f1d90",
         "convert-the-temperature.cpp": "047f4932b1502268dbdefc161c6fb2105ee4bd72",
         "difficulty": "unknown"
+      },
+      "2567-minimum-score-by-changing-two-elements": {
+        "2567-minimum-score-by-changing-two-elements.cpp": "cce9b21daef07a669a3568c6738cb1665fb37d3d",
+        "README.md": "334028d70a438669fd9c8ccfedf07e63aafc2ed3",
+        "difficulty": "medium"
       },
       "2574-left-and-right-sum-differences": {
         "2574-left-and-right-sum-differences.cpp": "3f455e67873e89077d2abac59fbfc223b7cd0edc",
