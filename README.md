@@ -429,6 +429,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [0027-remove-element](https://github.com/SrijitaV/LeetCode/tree/main/0027-remove-element/) | Easy |
 | [0033-search-in-rotated-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/SrijitaV/LeetCode/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
+| [0040-combination-sum-ii](https://github.com/SrijitaV/LeetCode/tree/main/0040-combination-sum-ii/) | Medium |
 | [0049-group-anagrams](https://github.com/SrijitaV/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0053-maximum-subarray](https://github.com/SrijitaV/LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0066-plus-one](https://github.com/SrijitaV/LeetCode/tree/main/0066-plus-one/) | Easy |
@@ -765,4 +766,8 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0204-count-primes](https://github.com/SrijitaV/LeetCode/tree/main/0204-count-primes/) | Medium |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0040-combination-sum-ii](https://github.com/SrijitaV/LeetCode/tree/main/0040-combination-sum-ii/) | Medium |
 <!---LeetCode Topics End-->
