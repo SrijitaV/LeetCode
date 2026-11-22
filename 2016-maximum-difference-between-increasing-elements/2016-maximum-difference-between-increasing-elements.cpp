@@ -21,6 +21,7 @@ public:
         // 4. Update mini with the minimum of mini and the current element.
 
         // 5. Return ans. If no valid pair exists, it remains -1.
+        
         int mini = nums[0];
         int ans = -1;
 
