@@ -457,6 +457,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [1389-create-target-array-in-the-given-order](https://github.com/SrijitaV/LeetCode/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/SrijitaV/LeetCode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/SrijitaV/LeetCode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
+| [2016-maximum-difference-between-increasing-elements](https://github.com/SrijitaV/LeetCode/tree/main/2016-maximum-difference-between-increasing-elements/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/SrijitaV/LeetCode/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2567-minimum-score-by-changing-two-elements](https://github.com/SrijitaV/LeetCode/tree/main/2567-minimum-score-by-changing-two-elements/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/SrijitaV/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
