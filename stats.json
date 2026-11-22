@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 75,
+    "easy": 76,
     "medium": 34,
     "hard": 1,
     "unknown": 57,
-    "solved": 167,
+    "solved": 168,
     "shas": {
       "README.md": {
-        "": "2ecb5a1a889a3d486b8afe9d61a10ad88cd86d11"
+        "": "d981273fb99e0ca881afd7eb3b900a27077c837a"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -45,7 +45,7 @@
         "difficulty": "medium"
       },
       "0040-combination-sum-ii": {
-        "0040-combination-sum-ii.cpp": "62d3c79619f969e09d03a40b494065206603e0ff",
+        "0040-combination-sum-ii.cpp": "b8c72f41d55902a6dba64b30e228c5678e8f16c2",
         "README.md": "4a1fe0885485970b7903ace493ed324e23b97462",
         "difficulty": "medium"
       },
@@ -463,6 +463,11 @@
       "2089-find-target-indices-after-sorting-array": {
         "2089-find-target-indices-after-sorting-array.cpp": "834d5569b943ba2e07259e03f3ffc63e9e346424",
         "README.md": "e573c7ced57e233f73bf81d2c0e7482f3aa90d0c",
+        "difficulty": "easy"
+      },
+      "2124-check-if-all-as-appears-before-all-bs": {
+        "2124-check-if-all-as-appears-before-all-bs.cpp": "ec7e07afbff77f0ea6f09314faf13a4b17a39cc0",
+        "README.md": "2729552236e45ed44f4d410f0d6e919b6bcb7f0e",
         "difficulty": "easy"
       },
       "2137-final-value-of-variable-after-performing-operations": {
