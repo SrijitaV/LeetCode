@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 77,
+    "easy": 78,
     "medium": 34,
     "hard": 1,
     "unknown": 57,
-    "solved": 169,
+    "solved": 170,
     "shas": {
       "README.md": {
-        "": "0b68a9414a66f4c9b0fd0a44a0b43e829a27e1e6"
+        "": "232e5e6a2c1b213d275cc7114050093df6c4b67c"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -638,6 +638,11 @@
       "3364-minimum-positive-sum-subarray": {
         "3364-minimum-positive-sum-subarray.cpp": "344dda955b9504af163c4f58023864d032f8f8f1",
         "README.md": "243d66474f3a41f99b36c40368e4f8d0e35f7573",
+        "difficulty": "easy"
+      },
+      "3411-maximum-subarray-with-equal-products": {
+        "3411-maximum-subarray-with-equal-products.cpp": "3e0d923be0dce2964c4e39cd9be12bdfbcda0b1b",
+        "README.md": "2842c4b0dcd2844aa2695e930ea77cf43b0913d4",
         "difficulty": "easy"
       },
       "344-reverse-string": {
