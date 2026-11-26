@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 78,
+    "easy": 80,
     "medium": 34,
     "hard": 1,
     "unknown": 57,
-    "solved": 170,
+    "solved": 172,
     "shas": {
       "README.md": {
-        "": "232e5e6a2c1b213d275cc7114050093df6c4b67c"
+        "": "abcc5edb0a64282ed46b2297a672337135903cd0"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -635,6 +635,11 @@
         "README.md": "6ad46a7ebacc4787b7a44f454b9383e662d5033f",
         "difficulty": "easy"
       },
+      "3360-stone-removal-game": {
+        "3360-stone-removal-game.cpp": "fcf86365f02f3b1d6dc022dc8fa6522be0fa540d",
+        "README.md": "0a86013446b6fb07d4945d7165b8abf410ec334b",
+        "difficulty": "easy"
+      },
       "3364-minimum-positive-sum-subarray": {
         "3364-minimum-positive-sum-subarray.cpp": "344dda955b9504af163c4f58023864d032f8f8f1",
         "README.md": "243d66474f3a41f99b36c40368e4f8d0e35f7573",
@@ -826,6 +831,11 @@
         "README.md": "5d2a6da56acbef2625d3396fdc6d379632bc189e",
         "find-missing-elements.cpp": "b57a145317e404c8d8d2405264c17c8294f26404",
         "difficulty": "unknown"
+      },
+      "4111-count-consistent-subarrays-i": {
+        "4111-count-consistent-subarrays-i.cpp": "d5ca5898ee826c00a72ff4172043770d429de092",
+        "README.md": "492e9aac0086d39dbf07225db4b0a77133f00c44",
+        "difficulty": "easy"
       },
       "4341-maximum-valid-pair-sum": {
         "README.md": "c894925a0e3d215ffaa75a4fa63257c8935941d6",
