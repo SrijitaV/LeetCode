@@ -507,6 +507,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [2235-add-two-integers](https://github.com/SrijitaV/LeetCode/tree/main/2235-add-two-integers/) | Easy |
 | [2409-count-days-spent-together](https://github.com/SrijitaV/LeetCode/tree/main/2409-count-days-spent-together/) | Easy |
 | [2469-convert-the-temperature](https://github.com/SrijitaV/LeetCode/tree/main/2469-convert-the-temperature/) | Easy |
+| [3360-stone-removal-game](https://github.com/SrijitaV/LeetCode/tree/main/3360-stone-removal-game/) | Easy |
 | [3411-maximum-subarray-with-equal-products](https://github.com/SrijitaV/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/SrijitaV/LeetCode/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/SrijitaV/LeetCode/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
@@ -686,6 +687,7 @@ The priority is **pattern recognition and problem-solving ability**, not simply 
 | [1389-create-target-array-in-the-given-order](https://github.com/SrijitaV/LeetCode/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [3028-ant-on-the-boundary](https://github.com/SrijitaV/LeetCode/tree/main/3028-ant-on-the-boundary/) | Easy |
+| [3360-stone-removal-game](https://github.com/SrijitaV/LeetCode/tree/main/3360-stone-removal-game/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/SrijitaV/LeetCode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
