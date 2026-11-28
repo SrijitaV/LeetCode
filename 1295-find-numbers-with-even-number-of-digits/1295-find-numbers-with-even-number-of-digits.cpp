@@ -2,25 +2,18 @@ class Solution {
 public:
     int findNumbers(vector<int>& nums) {
 
-        // -------- Approach: Mathematical Approach (Repeated Division) --------
+        // ------------------- Approach: Logarithmic Approach -------------------
 
-        // Intuition:
-        // - Divide each number by 10 repeatedly.
-        // - Every division removes the last digit.
-        // - Count the number of divisions.
-        // - If the digit count is even, increment the answer.
+// Intuition:
+// - Use log10(n) to calculate the number of digits.
+// - Take the floor value and add 1.
+// - Check whether the digit count is even.
 
         int count = 0;
 
         for (int i = 0; i < nums.size(); i++) {
 
-            int n = nums[i];
-            int digits = 0;
-
-            while (n > 0) {
-                digits++;
-                n = n / 10;
-            }
+            int digits = (int)log10(nums[i]) + 1;
 
             if (digits % 2 == 0) {
                 count++;
@@ -29,8 +22,40 @@ public:
 
         return count;
 
-        // TC : O(N* D) 
-        // SC : O(1)
+        // TC: O(N)
+// SC: O(1)
+
+        // ----------------------------------------------------------------------
+
+        // // -------- Approach: Mathematical Approach (Repeated Division) --------
+
+        // // Intuition:
+        // // - Divide each number by 10 repeatedly.
+        // // - Every division removes the last digit.
+        // // - Count the number of divisions.
+        // // - If the digit count is even, increment the answer.
+
+        // int count = 0;
+
+        // for (int i = 0; i < nums.size(); i++) {
+
+        //     int n = nums[i];
+        //     int digits = 0;
+
+        //     while (n > 0) {
+        //         digits++;
+        //         n = n / 10;
+        //     }
+
+        //     if (digits % 2 == 0) {
+        //         count++;
+        //     }
+        // }
+
+        // return count;
+
+        // // TC : O(N* D) 
+        // // SC : O(1)
 
         // ----------------------------------------------------------------------
 
@@ -70,4 +95,3 @@ public:
         // // - Only one temporary string is used at a time.
     }
 };
-
