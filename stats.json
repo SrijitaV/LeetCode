@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "easy": 80,
+    "easy": 81,
     "medium": 34,
     "hard": 1,
     "unknown": 57,
-    "solved": 172,
+    "solved": 173,
     "shas": {
       "README.md": {
-        "": "abcc5edb0a64282ed46b2297a672337135903cd0"
+        "": "0b969f2400502631974129ed448e096e250b5882"
       },
       "0001-two-sum": {
         "0001-two-sum.cpp": "94d8832747af8e052bce692b62ef8b97a3d000b1",
@@ -303,6 +303,11 @@
       "1281-subtract-the-product-and-sum-of-digits-of-an-integer": {
         "1281-subtract-the-product-and-sum-of-digits-of-an-integer.cpp": "b942fb801214ef4689a51929fbc92d3504058af0",
         "README.md": "24cc047d9d69e7b6b570b67b0ffa309102dc743c",
+        "difficulty": "easy"
+      },
+      "1295-find-numbers-with-even-number-of-digits": {
+        "1295-find-numbers-with-even-number-of-digits.cpp": "45014c4e567b0341ed495431ac808d99f99bfb16",
+        "README.md": "6a076a1a4d1531ae4614e76b18e6c374d29e038f",
         "difficulty": "easy"
       },
       "13-roman-to-integer": {
@@ -636,7 +641,7 @@
         "difficulty": "easy"
       },
       "3360-stone-removal-game": {
-        "3360-stone-removal-game.cpp": "fcf86365f02f3b1d6dc022dc8fa6522be0fa540d",
+        "3360-stone-removal-game.cpp": "40dc353ec02da76249edc22bb297428e1ee6e1b4",
         "README.md": "0a86013446b6fb07d4945d7165b8abf410ec334b",
         "difficulty": "easy"
       },
