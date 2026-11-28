@@ -2,12 +2,12 @@ class Solution {
 public:
     int findNumbers(vector<int>& nums) {
 
-        // ------------------- Approach: Logarithmic Approach -------------------
+        // ---------------- Approach: Logarithmic Approach ----------------
 
-// Intuition:
-// - Use log10(n) to calculate the number of digits.
-// - Take the floor value and add 1.
-// - Check whether the digit count is even.
+        // Intuition:
+        // - Use log10(n) to calculate the number of digits.
+        // - Take the floor value and add 1.
+        // - Check whether the digit count is even.
 
         int count = 0;
 
@@ -23,11 +23,12 @@ public:
         return count;
 
         // TC: O(N)
-// SC: O(1)
+        // SC: O(1)
 
         // ----------------------------------------------------------------------
 
-        // // -------- Approach: Mathematical Approach (Repeated Division) --------
+        // // -------- Approach: Mathematical Approach (Repeated Division)
+        // --------
 
         // // Intuition:
         // // - Divide each number by 10 repeatedly.
@@ -54,7 +55,7 @@ public:
 
         // return count;
 
-        // // TC : O(N* D) 
+        // // TC : O(N* D)
         // // SC : O(1)
 
         // ----------------------------------------------------------------------
